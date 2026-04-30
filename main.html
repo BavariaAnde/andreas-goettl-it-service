@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andreas Göttl IT Service | IT-Hilfe in Rottal-Inn</title>
+  <meta name="description" content="Lokale IT-Hilfe für Privatkunden, Senioren, kleine Betriebe und Vereine im Raum Rottal-Inn. Hilfe bei WLAN, PC, Drucker, Backup und Fernwartung." />
+  <meta name="theme-color" content="#f7f6f2" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://example.github.io/andreas-goettl-it-service/" />
+  <meta property="og:title" content="Andreas Göttl IT Service | IT-Hilfe in Rottal-Inn" />
+  <meta property="og:description" content="IT-Hilfe vor Ort oder per Fernwartung für Privatkunden, Senioren, kleine Betriebe und Vereine im Raum Rottal-Inn." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="de_DE" />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=zodiak@400,700&display=swap" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.375rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3rem);
+      --text-3xl: clamp(2.5rem, 1rem + 4vw, 4.25rem);
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem; --space-20: 5rem; --space-24: 6rem;
+      --color-bg: #f7f6f2; --color-surface: #fbfaf7; --color-surface-2: #ffffff; --color-surface-offset: #f1eee8; --color-divider: #ddd8cf; --color-border: rgba(40,37,29,.12);
+      --color-text: #28251d; --color-text-muted: #666157; --color-text-faint: #9d988d; --color-text-inverse: #f9f8f4;
+      --color-primary: #0f6b6e; --color-primary-hover: #0b5558; --color-primary-highlight: #dce8e7; --color-success: #2d7b49; --color-success-soft: #dceddf;
+      --radius-sm: .375rem; --radius-md: .5rem; --radius-lg: .875rem; --radius-xl: 1.25rem; --radius-full: 9999px;
+      --shadow-sm: 0 1px 2px rgba(25,20,14,.05); --shadow-md: 0 10px 30px rgba(25,20,14,.07);
+      --content: 72rem; --font-display: 'Zodiak', Georgia, serif; --font-body: 'General Sans', Inter, sans-serif;
+      --transition: 180ms cubic-bezier(.16,1,.3,1);
+    }
+    [data-theme="dark"] {
+      --color-bg: #171614; --color-surface: #1d1b18; --color-surface-2: #24221f; --color-surface-offset: #2a2724; --color-divider: #332f2a; --color-border: rgba(249,248,244,.12);
+      --color-text: #e3ddd4; --color-text-muted: #b8b1a6; --color-text-faint: #867f75; --color-text-inverse: #1b1916;
+      --color-primary: #67acb1; --color-primary-hover: #90c7cb; --color-primary-highlight: #2d3939; --color-success: #77bc90; --color-success-soft: #23382b;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,.24); --shadow-md: 0 10px 30px rgba(0,0,0,.28);
+    }
+    *,:before,:after{box-sizing:border-box;margin:0;padding:0}
+    html{-webkit-text-size-adjust:none;text-size-adjust:none;scroll-behavior:smooth;scroll-padding-top:5rem}
+    body{min-height:100dvh;line-height:1.6;font-family:var(--font-body);font-size:var(--text-base);color:var(--color-text);background:var(--color-bg)}
+    img,svg{display:block;max-width:100%;height:auto} a{text-decoration:none;color:inherit} button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+    .skip-link{position:absolute;left:var(--space-4);top:-3rem;background:var(--color-primary);color:var(--color-text-inverse);padding:var(--space-3) var(--space-4);border-radius:var(--radius-md);z-index:100}.skip-link:focus{top:var(--space-4)}
+    :focus-visible{outline:2px solid var(--color-primary);outline-offset:3px;border-radius:var(--radius-sm)}
+    .container{width:min(100% - 2rem,var(--content));margin-inline:auto}
+    .section{padding-block:clamp(var(--space-12),8vw,var(--space-20))}
+    .eyebrow{display:inline-flex;align-items:center;gap:var(--space-2);padding:var(--space-2) var(--space-3);border-radius:var(--radius-full);background:var(--color-primary-highlight);color:var(--color-primary);font-size:var(--text-xs);font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+    .dot{width:.5rem;height:.5rem;border-radius:50%;background:currentColor}
+    h1,h2{font-family:var(--font-display);line-height:1.08;letter-spacing:-.02em} h1{font-size:var(--text-3xl);max-width:11ch} h2{font-size:var(--text-2xl);max-width:14ch} h3{font-size:var(--text-lg);line-height:1.2}
+    p{color:var(--color-text-muted);max-width:68ch}.lead{font-size:var(--text-lg);color:var(--color-text);max-width:43ch}
+    .header{position:sticky;top:0;z-index:50;background:color-mix(in oklab,var(--color-bg) 90%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--color-border)}
+    .header-inner{min-height:4.75rem;display:flex;align-items:center;justify-content:space-between;gap:var(--space-4)}
+    .brand{display:inline-flex;align-items:center;gap:var(--space-3);font-weight:700}.brand-mark{width:2.75rem;height:2.75rem;padding:.55rem;border-radius:1rem;background:var(--color-surface);border:1px solid var(--color-border);color:var(--color-primary);box-shadow:var(--shadow-sm)}
+    .brand-text{display:flex;flex-direction:column;line-height:1.1}.brand-text small{font-size:var(--text-xs);font-weight:500;color:var(--color-text-muted)}
+    .nav{display:none;gap:var(--space-4);font-size:var(--text-sm);color:var(--color-text-muted)} .nav a:hover{color:var(--color-text)}
+    .header-actions{display:flex;align-items:center;gap:var(--space-2)}
+    .theme-toggle,.icon-button{width:2.75rem;height:2.75rem;border-radius:999px;border:1px solid var(--color-border);background:var(--color-surface);display:inline-grid;place-items:center}
+    .btn-row{display:flex;flex-wrap:wrap;gap:var(--space-3)}
+    .btn{min-height:44px;display:inline-flex;align-items:center;justify-content:center;gap:var(--space-2);padding:.9rem 1.15rem;border-radius:var(--radius-full);font-size:var(--text-sm);font-weight:600;border:1px solid transparent;transition:background var(--transition),border-color var(--transition),transform var(--transition),color var(--transition)}
+    .btn:hover{transform:translateY(-1px)} .btn-primary{background:var(--color-primary);color:var(--color-text-inverse)} .btn-primary:hover{background:var(--color-primary-hover)} .btn-secondary{background:transparent;border-color:var(--color-border)} .btn-secondary:hover{background:var(--color-surface-offset)} .btn-whatsapp{background:var(--color-success);color:var(--color-text-inverse)}
+    .hero{padding-top:clamp(var(--space-12),10vw,var(--space-20));padding-bottom:clamp(var(--space-10),8vw,var(--space-16))}
+    .hero-grid,.split{display:grid;gap:var(--space-8)}
+    .hero-card,.panel,.card,.legal-box{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);box-shadow:var(--shadow-sm)}
+    .hero-card,.panel,.legal-box{padding:var(--space-6)} .cards{display:grid;gap:var(--space-4);grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr))}
+    .card{padding:var(--space-5)}
+    .section-head{display:grid;gap:var(--space-4);margin-bottom:var(--space-8)}
+    .list{list-style:none;display:grid;gap:var(--space-3)}
+    .list li{display:flex;gap:var(--space-3);align-items:flex-start}
+    .chip{flex:0 0 auto;width:1.85rem;height:1.85rem;border-radius:999px;display:grid;place-items:center;background:var(--color-primary-highlight);color:var(--color-primary);margin-top:.12rem}
+    .proof{display:grid;gap:var(--space-4)}
+    .proof-item{padding:var(--space-4);background:var(--color-surface-offset);border:1px solid var(--color-border);border-radius:var(--radius-lg)}
+    .proof-item strong,.price strong,.faq strong,.legal-box strong{color:var(--color-text)}
+    .quote{padding:var(--space-5);border-left:3px solid color-mix(in oklab,var(--color-primary) 50%,var(--color-surface));background:var(--color-surface-offset);border-radius:var(--radius-lg)}
+    .price-list,.faq-list{list-style:none;display:grid;gap:var(--space-4)}
+    .price,.faq{display:grid;gap:var(--space-2);padding-bottom:var(--space-4);border-bottom:1px solid var(--color-divider)}
+    .price:last-child,.faq:last-child{border-bottom:none;padding-bottom:0}
+    .price-top{display:flex;justify-content:space-between;gap:var(--space-4)}
+    .contact-box{background:linear-gradient(160deg,color-mix(in oklab,var(--color-primary) 8%,var(--color-surface)),var(--color-surface))}
+    .legal-grid{display:grid;gap:var(--space-4)}
+    .small{font-size:var(--text-sm)} .tiny{font-size:var(--text-xs)}
+    footer{padding-block:var(--space-8);border-top:1px solid var(--color-border);font-size:var(--text-sm);color:var(--color-text-muted)}
+    .footer-inner{display:flex;flex-wrap:wrap;gap:var(--space-3);justify-content:space-between;align-items:center}
+    .footer-links{display:flex;flex-wrap:wrap;gap:var(--space-3)}
+    .floating-wa{position:fixed;right:1rem;bottom:1rem;z-index:40}
+    .floating-wa a{width:3.5rem;height:3.5rem;border-radius:999px;background:var(--color-success);color:#fff;display:grid;place-items:center;box-shadow:var(--shadow-md);border:1px solid rgba(255,255,255,.18)}
+    @media (min-width: 768px){.nav{display:flex}.hero-grid{grid-template-columns:1.15fr .85fr}.split{grid-template-columns:repeat(2,minmax(0,1fr))}.legal-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media (max-width: 767px){.header-inner{flex-wrap:wrap;padding-block:var(--space-3)}h1{max-width:9ch}.floating-wa{right:.75rem;bottom:.75rem}}
+    @media (prefers-reduced-motion: reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Andreas Göttl IT Service",
+    "description": "Lokale IT-Hilfe für Privatkunden, Senioren, kleine Betriebe und Vereine im Raum Rottal-Inn.",
+    "areaServed": "Rottal-Inn, Niederbayern",
+    "telephone": "+49-15563-242815",
+    "email": "kontakt@andreas-goettl.de",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Oberbubach 1a",
+      "postalCode": "94439",
+      "addressLocality": "Roßbach",
+      "addressCountry": "DE"
+    },
+    "url": "https://andreas-goettl.de"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#start" aria-label="Zur Startseite">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="6" width="36" height="36" rx="12" stroke="currentColor" stroke-width="3"/>
+            <path d="M16 30L24 14L32 30" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19 25H29" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">Andreas Göttl IT Service<small>IT-Hilfe in Rottal-Inn</small></span>
+      </a>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#referenzen">Referenzen</a>
+        <a href="#preise">Preise</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#rechtliches">Rechtliches</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Zu dunklem Modus wechseln">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <a class="btn btn-primary" href="#kontakt">Termin anfragen</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="inhalt">
+    <section class="hero" id="start">
+      <div class="container hero-grid">
+        <div style="display:grid;gap:1.25rem">
+          <span class="eyebrow"><span class="dot"></span>Lokal in Thanndorf und Umgebung</span>
+          <h1>Wenn WLAN, PC oder Drucker nerven, kümmere ich mich darum.</h1>
+          <p class="lead">Für Privatkunden, Senioren, kleine Betriebe, Vereine und Ferienwohnungen im Raum Rottal-Inn: verständliche IT-Hilfe vor Ort oder per Fernwartung, ohne Fachchinesisch und ohne unnötiges Aufschwatzen.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#kontakt">Unverbindlich anfragen</a>
+            <a class="btn btn-whatsapp" href="https://wa.me/49123456789?text=Servus%20Andreas%2C%20ich%20h%C3%A4tte%20eine%20Anfrage%20zu%20deinem%20IT-Service." target="_blank" rel="noopener noreferrer" aria-label="Per WhatsApp Business schreiben">WhatsApp schreiben</a>
+            <a class="btn btn-secondary" href="#referenzen">Referenzen ansehen</a>
+          </div>
+          <ul class="list" role="list">
+            <li><span class="chip">✓</span><span>WLAN, PC, Drucker, Backup und allgemeine IT-Probleme.</span></li>
+            <li><span class="chip">✓</span><span>Abends und am Wochenende nach Vereinbarung.</span></li>
+            <li><span class="chip">✓</span><span>Vor Ort im Raum Rottal-Inn oder schnell per Fernwartung.</span></li>
+          </ul>
+        </div>
+        <aside class="hero-card" aria-label="Das suchen Kunden meistens">
+          <h2>Was Kunden meist suchen</h2>
+          <ul class="list" role="list" style="margin-top:1rem">
+            <li><span class="chip">1</span><span>„Mein WLAN ist schwach oder bricht ständig ab.“</span></li>
+            <li><span class="chip">2</span><span>„Der PC ist langsam geworden oder macht Probleme.“</span></li>
+            <li><span class="chip">3</span><span>„Drucker oder Scanner läuft nicht.“</span></li>
+            <li><span class="chip">4</span><span>„Ich brauche Hilfe mit Backup, neuem Laptop oder Einrichtung.“</span></li>
+          </ul>
+          <div class="proof" style="margin-top:1.25rem">
+            <div class="proof-item"><strong>Ehrliche Einschätzung</strong><p class="small">Vorab kurz sagen, was nicht funktioniert — ich sage offen, ob Vor-Ort-Service oder Fernwartung sinnvoll ist.</p></div>
+            <div class="proof-item"><strong>Einfach erklärt</strong><p class="small">Besonders wichtig für Privatkunden und Senioren: kein unnötiges Technik-Gerede, sondern klare Hilfe.</p></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="leistungen">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Leistungen</span>
+          <h2>Genau die Themen, bei denen im Alltag Zeit, Nerven oder Umsatz verloren gehen.</h2>
+          <p>Aus Kundensicht zählen keine Buzzwords, sondern schnelle Lösungen. Deshalb stehen die häufigsten und verständlichsten Leistungen bewusst im Vordergrund.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><h3>WLAN verbessern</h3><p>Router, Repeater, Mesh, schlechte Abdeckung, instabile Verbindung oder langsames WLAN — ich prüfe die Ursache und richte es sauber ein.</p></article>
+          <article class="card"><h3>PC- und Laptop-Hilfe</h3><p>Wenn der Rechner langsam ist, Updates hängen, Programme spinnen oder ein neues Gerät eingerichtet werden soll, übernehme ich das.</p></article>
+          <article class="card"><h3>Drucker & Scanner</h3><p>Ich bringe Drucker und Scanner wieder zum Laufen, verbinde Geräte sauber und richte einfache Dokumentenabläufe ein.</p></article>
+          <article class="card"><h3>Backup & Datensicherung</h3><p>Wichtige Fotos, Dateien und Unterlagen sollten verlässlich gesichert sein. Ich richte einfache, nachvollziehbare Sicherungen ein.</p></article>
+          <article class="card"><h3>Fernwartung</h3><p>Viele Probleme lassen sich schnell remote lösen. Das spart Zeit, ist oft günstiger und praktisch für kleinere Softwarethemen.</p></article>
+          <article class="card"><h3>Kleine Betriebe & Vereine</h3><p>Für Handwerker, Läden, Vereine oder Ferienwohnungen helfe ich bei Geräten, WLAN, Druckern, Backup und allgemeiner IT-Pflege.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="referenzen">
+      <div class="container split">
+        <div>
+          <div class="section-head" style="margin-bottom:0">
+            <span class="eyebrow">Referenzen & Vertrauen</span>
+            <h2>Das wollen Interessenten als Erstes sehen: Kann der das wirklich ordentlich?</h2>
+            <p>Gerade bei einem lokalen IT-Service sind Referenzen oft wichtiger als schönes Design. Menschen suchen nach Belegen, dass du zuverlässig bist, verständlich erklärst und echte Probleme sauber löst.</p>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="quote">
+            <strong>Platzhalter für echte Kundenstimme</strong>
+            <p class="small" style="margin-top:.5rem;max-width:none">„Unser WLAN war seit Monaten unzuverlässig. Nach dem Termin lief alles stabil und verständlich erklärt war es auch.“</p>
+          </div>
+          <p class="small" style="margin-top:1rem">Sobald du erste Aufträge abgeschlossen hast, solltest du kurze echte Kundenstimmen und Google-Bewertungen direkt hier ergänzen.</p>
+        </div>
+      </div>
+      <div class="container" style="margin-top:2rem">
+        <div class="cards">
+          <article class="card"><h3>Beispielprojekt: WLAN im Wohnhaus</h3><p>Schwache Abdeckung im Obergeschoss, Verbindungsabbrüche im Homeoffice. Lösung: Router-Standort optimiert, Funkkanäle geprüft, stabiles WLAN sauber eingerichtet.</p></article>
+          <article class="card"><h3>Beispielprojekt: Drucker & Scanner</h3><p>Drucker war nicht zuverlässig erreichbar, Scanner-Workflow unübersichtlich. Lösung: Verbindung neu aufgesetzt, Einrichtung bereinigt, kurze Einweisung gegeben.</p></article>
+          <article class="card"><h3>Beispielprojekt: Backup-Basis</h3><p>Dateien lagen verstreut auf mehreren Geräten ohne echte Sicherung. Lösung: einfache Backup-Struktur eingerichtet, damit wichtige Daten nicht verloren gehen.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="preise">
+      <div class="container split">
+        <div class="section-head" style="margin-bottom:0">
+          <span class="eyebrow">Preise</span>
+          <h2>Klar genug, damit man weiß, woran man ist.</h2>
+          <p>Kunden wollen keine undurchsichtige IT-Abrechnung. Deshalb sind auf der Seite einfache Einstiegspreise und typische Beispiele wichtiger als zu viele Sonderfälle.</p>
+        </div>
+        <div class="panel">
+          <ul class="price-list" role="list">
+            <li class="price"><div class="price-top"><strong>Vor-Ort-Service</strong><span>ab 65 € / Stunde</span></div><p class="small">Für Themen, die direkt bei Ihnen zuhause oder im Betrieb erledigt werden.</p></li>
+            <li class="price"><div class="price-top"><strong>Fernwartung</strong><span>ab 55 € / Stunde</span></div><p class="small">Praktisch bei kleineren Windows-, Mail-, Konto- oder Softwareproblemen.</p></li>
+            <li class="price"><div class="price-top"><strong>WLAN-Check</strong><span>ab 99 €</span></div><p class="small">Ideal als einfacher Einstieg, wenn die Verbindung langsam oder instabil ist.</p></li>
+            <li class="price"><div class="price-top"><strong>PC-Neueinrichtung</strong><span>ab 129 €</span></div><p class="small">Neues Gerät sauber einrichten, Daten übernehmen und alles verständlich erklären.</p></li>
+            <li class="price"><div class="price-top"><strong>Backup-Check</strong><span>ab 69 €</span></div><p class="small">Prüfen, ob die Datensicherung überhaupt funktioniert und sinnvoll aufgebaut ist.</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kontakt">
+      <div class="container split">
+        <div class="panel contact-box">
+          <span class="eyebrow">Kontakt</span>
+          <h2 style="margin-top:1rem">Am besten kurz beschreiben, was nicht funktioniert.</h2>
+          <p style="margin-top:1rem">Schreiben Sie kurz, worum es geht, ob es um Privat oder Betrieb geht und aus welchem Ort Sie kommen. Dann kann ich schnell einschätzen, was sinnvoll ist.</p>
+          <ul class="list" role="list" style="margin-top:1.25rem">
+            <li><span class="chip">↳</span><span><strong>Telefon:</strong> 01xx / xxx xxx xx</span></li>
+            <li><span class="chip">↳</span><span><strong>E-Mail:</strong> kontakt@andreas-goettl-it-service.de</span></li>
+            <li><span class="chip">↳</span><span><strong>WhatsApp Business:</strong> direkte kurze Anfrage möglich</span></li>
+            <li><span class="chip">↳</span><span><strong>Einsatzgebiet:</strong> Thanndorf, Raum Rottal-Inn / Niederbayern</span></li>
+          </ul>
+          <div class="btn-row" style="margin-top:1.25rem">
+            <a class="btn btn-whatsapp" href="https://wa.me/49123456789?text=Servus%20Andreas%2C%20ich%20h%C3%A4tte%20eine%20Anfrage%20zu%20deinem%20IT-Service." target="_blank" rel="noopener noreferrer">WhatsApp Business</a>
+            <a class="btn btn-secondary" href="mailto:kontakt@andreas-goettl-it-service.de">E-Mail schreiben</a>
+          </div>
+        </div>
+        <div class="panel">
+          <span class="eyebrow">Was begeistert</span>
+          <h2 style="margin-top:1rem">Nicht Überredung, sondern Sicherheit.</h2>
+          <ul class="list" role="list" style="margin-top:1rem">
+            <li><span class="chip">✓</span><span>Klar sagen, was gemacht wird und was es ungefähr kostet.</span></li>
+            <li><span class="chip">✓</span><span>Referenzen und echte Beispiele sichtbar machen.</span></li>
+            <li><span class="chip">✓</span><span>Einfache Kontaktwege wie Telefon, Mail und WhatsApp anbieten.</span></li>
+            <li><span class="chip">✓</span><span>Lokalen Bezug und erreichbare Zeiten deutlich zeigen.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="rechtliches">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Rechtliches</span>
+          <h2>Für Veröffentlichung vorbereitet, aber bitte noch mit deinen echten Daten ergänzen.</h2>
+          <p>Eine gewerblich genutzte Website braucht ein leicht erkennbares Impressum und eine Datenschutzerklärung. Für einen sauberen Auftritt solltest du diese Angaben vor dem Livegang vollständig ergänzen und prüfen. </p>
+        </div>
+        <div class="legal-grid">
+          <section class="legal-box" id="impressum">
+            <h3>Impressum</h3>
+            <p class="small" style="margin-top:1rem"><strong>Angaben gemäß § 5 DDG</strong></p>
+            <p class="small" style="margin-top:.75rem">Andreas Göttl IT Service<br>Andreas Göttl<br>Musterstraße 1<br>00000 Thanndorf<br>Deutschland</p>
+            <p class="small" style="margin-top:.75rem"><strong>Kontakt</strong><br>Telefon: 01xx / xxx xxx xx<br>E-Mail: kontakt@andreas-goettl-it-service.de</p>
+            <p class="small" style="margin-top:.75rem"><strong>Unternehmensform</strong><br>Kleingewerbe / Einzelunternehmen</p>
+            <p class="small" style="margin-top:.75rem"><strong>Umsatzsteuer</strong><br>Gemäß § 19 UStG wird keine Umsatzsteuer berechnet, sofern die Kleinunternehmerregelung angewendet wird.</p>
+            <p class="small" style="margin-top:.75rem"><strong>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</strong><br>Andreas Göttl, Anschrift wie oben.</p>
+            <p class="tiny" style="margin-top:1rem">Bitte vor Veröffentlichung mit deiner ladungsfähigen Anschrift, echter Telefonnummer, echter Mailadresse sowie ggf. W-IdNr. oder USt-IdNr. ergänzen, sobald vorhanden.</p>
+          </section>
+          <section class="legal-box" id="datenschutz">
+            <h3>Datenschutz</h3>
+            <p class="small" style="margin-top:1rem"><strong>Allgemeine Hinweise</strong></p>
+            <p class="small" style="margin-top:.75rem">Diese Website dient der Information über das Angebot von Andreas Göttl IT Service. Personenbezogene Daten werden nur verarbeitet, soweit dies technisch erforderlich ist oder Sie aktiv Kontakt aufnehmen.</p>
+            <p class="small" style="margin-top:.75rem"><strong>Server-Logfiles</strong><br>Beim Aufruf der Website können durch den Hosting-Anbieter technisch notwendige Verbindungsdaten verarbeitet werden, zum Beispiel IP-Adresse, Datum, Uhrzeit und aufgerufene Seite.</p>
+            <p class="small" style="margin-top:.75rem"><strong>Kontaktaufnahme</strong><br>Wenn Sie per E-Mail, Telefon oder WhatsApp Kontakt aufnehmen, werden die von Ihnen übermittelten Angaben zur Bearbeitung Ihrer Anfrage verwendet.</p>
+            <p class="small" style="margin-top:.75rem"><strong>Externe Dienste</strong><br>Beim Klick auf WhatsApp oder E-Mail verlassen Sie diese Website bzw. nutzen externe Dienste. Dabei gelten zusätzlich die Datenschutzbestimmungen des jeweiligen Anbieters.</p>
+            <p class="small" style="margin-top:.75rem"><strong>Ihre Rechte</strong><br>Sie haben im Rahmen der gesetzlichen Vorgaben Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Beschwerde bei einer Aufsichtsbehörde.</p>
+            <p class="tiny" style="margin-top:1rem">Hinweis: Das hier ist eine solide Grundstruktur, ersetzt aber keine anwaltliche Prüfung. Vor allem bei eingebetteten Karten, Analyse-Tools, Terminsoftware oder Formularen muss die Datenschutzerklärung erweitert werden.</p>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="floating-wa" aria-hidden="false">
+    <a href="https://wa.me/49123456789?text=Servus%20Andreas%2C%20ich%20h%C3%A4tte%20eine%20Anfrage%20zu%20deinem%20IT-Service." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Business öffnen">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.03 2C6.62 2 2.22 6.39 2.22 11.81c0 1.73.45 3.43 1.31 4.93L2 22l5.42-1.5a9.8 9.8 0 0 0 4.6 1.17h.01c5.41 0 9.81-4.4 9.81-9.81 0-2.62-1.02-5.08-2.79-6.95Zm-7.02 15.1h-.01a8.13 8.13 0 0 1-4.13-1.13l-.3-.18-3.22.89.86-3.14-.2-.32a8.14 8.14 0 0 1-1.25-4.32c0-4.49 3.65-8.14 8.15-8.14 2.17 0 4.22.84 5.76 2.39a8.1 8.1 0 0 1 2.38 5.76c0 4.49-3.65 8.14-8.04 8.14Zm4.46-6.1c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1-.37-1.91-1.18-.71-.63-1.18-1.4-1.32-1.64-.14-.24-.01-.36.11-.48.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.41-.54-.42l-.46-.01c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.69 2.57 4.1 3.61.57.25 1.02.4 1.37.51.58.18 1.11.15 1.53.09.47-.07 1.43-.58 1.63-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"/></svg>
+    </a>
+  </div>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© Andreas Göttl IT Service</span>
+      <div class="footer-links">
+        <a href="#impressum">Impressum</a>
+        <a href="#datenschutz">Datenschutz</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const toggle=document.querySelector('[data-theme-toggle]');
+      const root=document.documentElement;
+      let theme=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+      const update=()=>{root.setAttribute('data-theme',theme);toggle.setAttribute('aria-label',theme==='dark'?'Zu hellem Modus wechseln':'Zu dunklem Modus wechseln');toggle.innerHTML=theme==='dark'?'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>':'<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';};
+      update();
+      toggle.addEventListener('click',()=>{theme=theme==='dark'?'light':'dark';update();});
+    })();
+  </script>
+</body>
+</html>
