@@ -1,0 +1,47 @@
+<svg viewBox="0 0 560 560" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B4B4A"/>
+      <stop offset="100%" stop-color="#0F3433"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Grundkreis mit Sicherheitsrand fuer Kreis-Crop (Insta/LinkedIn Avatar) -->
+  <circle cx="280" cy="280" r="245" fill="url(#bg)"/>
+  <circle cx="280" cy="280" r="245" fill="none" stroke="#D98E4A" stroke-width="3" opacity="0.55"/>
+
+  <!-- Monogramm -->
+  <text x="280" y="300"
+        font-family="'Poppins','Segoe UI',Arial,sans-serif"
+        font-weight="700"
+        font-size="150"
+        letter-spacing="-4"
+        text-anchor="middle"
+        fill="#F5F1E8">AG</text>
+
+  <!-- Akzentlinie -->
+  <line x1="215" y1="338" x2="345" y2="338" stroke="#D98E4A" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- WLAN-Signal, freistehend oben rechts -->
+  <g transform="translate(378,168)" stroke="#D98E4A" stroke-width="8" fill="none" stroke-linecap="round">
+    <path d="M -30 8 A 30 30 0 0 1 30 8" opacity="1"/>
+    <path d="M -18 20 A 30 30 0 0 1 18 20" transform="translate(0,-6) scale(0.75)" opacity="0.75"/>
+  </g>
+  <circle cx="378" cy="206" r="7.5" fill="#D98E4A"/>
+
+  <!-- Unterzeile -->
+  <text x="280" y="375"
+        font-family="'Poppins','Segoe UI',Arial,sans-serif"
+        font-weight="500"
+        font-size="25"
+        letter-spacing="3.5"
+        fill="#F5F1E8"
+        text-anchor="middle">IT SERVICE</text>
+  <text x="280" y="402"
+        font-family="'Segoe UI',Arial,sans-serif"
+        font-weight="400"
+        font-size="16"
+        letter-spacing="4"
+        fill="#D98E4A"
+        text-anchor="middle">ROSSBACH</text>
+</svg>

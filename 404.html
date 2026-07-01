@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="de" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f1e8">
+  <meta name="color-scheme" content="light dark">
+
+  <title>Seite nicht gefunden | Andreas Göttl IT Service</title>
+  <meta name="description" content="Diese Seite gibt es nicht (mehr). Zurück zur Startseite von Andreas Göttl IT Service in Roßbach.">
+  <meta name="robots" content="noindex, follow">
+
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+
+  <script>
+    document.documentElement.classList.remove('no-js');
+    try {
+      const storedTheme = localStorage.getItem('theme');
+      const theme = storedTheme === 'dark' || storedTheme === 'light' ? storedTheme : 'light';
+      document.documentElement.dataset.theme = theme;
+      const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+      if (metaThemeColor) {
+        metaThemeColor.setAttribute('content', theme === 'dark' ? '#0f3433' : '#f5f1e8');
+      }
+    } catch (error) {}
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="./" aria-label="Andreas Göttl IT Service Startseite">
+        <img class="brand__logo" src="assets/andreas-goettl-logo.svg" width="48" height="48" alt="Andreas Göttl IT Service Roßbach">
+        <span>
+          <strong>Andreas Göttl</strong>
+          <small>IT Service Roßbach</small>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" aria-labelledby="notfound-title">
+      <div class="container">
+        <div class="contact-card reveal" style="max-width: 640px; margin-inline: auto; text-align: center;">
+          <p class="eyebrow">Fehler 404</p>
+          <h1 id="notfound-title">Diese Seite gibt es nicht.</h1>
+          <p>Der Link ist entweder falsch oder die Seite wurde verschoben. Am schnellsten geht es über die Startseite weiter.</p>
+
+          <div class="hero-actions" style="justify-content: center;">
+            <a class="button button-primary" href="./">Zur Startseite</a>
+            <a class="button button-secondary" href="./#kontakt">Kontakt aufnehmen</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year></span> Andreas Göttl IT Service</p>
+      <nav aria-label="Footer Navigation">
+        <a href="./#leistungen">Leistungen</a>
+        <a href="./#warum-ich">Warum ich</a>
+        <a href="./#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
