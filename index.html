@@ -1,301 +1,615 @@
 <!doctype html>
 <html lang="de" class="no-js">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef">
+  <meta name="color-scheme" content="light dark">
 
-  <title>IT Service Roßbach | Andreas Göttl IT Service – Computerhilfe & IT Support Niederbayern</title>
-  <meta name="description" content="Professioneller IT Service in Roßbach (Niederbayern). Hilfe bei PC, WLAN, Drucker, Windows, Netzwerk & Fernwartung. Schnelle, verständliche IT-Hilfe für Privat & kleine Unternehmen." />
-  <link rel="canonical" href="https://andreas-goettl.de/" />
-  <meta name="robots" content="index, follow" />
+  <title>IT Service Roßbach | Computerhilfe Rottal-Inn & PC Hilfe Niederbayern</title>
+  <meta name="description" content="Andreas Göttl IT Service hilft schnell und verständlich bei WLAN, PC, Drucker, Windows, Backup, Netzwerk und Fernwartung in Roßbach, Rottal-Inn und Niederbayern.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://www.andreas-goettl.de/">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Andreas Göttl IT Service – IT Hilfe in Roßbach" />
-  <meta property="og:description" content="Schnelle und verständliche Computerhilfe, WLAN- & Netzwerk-Support, PC Service und Fernwartung in Niederbayern." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="/assets/og-image.webp" />
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Andreas Göttl IT Service">
+  <meta property="og:title" content="IT Service Roßbach | Andreas Göttl IT Service">
+  <meta property="og:description" content="Schnelle Computerhilfe, WLAN Hilfe, Drucker Hilfe und Fernwartung in Roßbach, Rottal-Inn und Niederbayern.">
+  <meta property="og:url" content="https://www.andreas-goettl.de/">
+  <meta property="og:image" content="https://www.andreas-goettl.de/assets/og-image.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Andreas Göttl IT Service in Roßbach">
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="IT Service Roßbach | Computerhilfe Rottal-Inn">
+  <meta name="twitter:description" content="Verständliche IT-Hilfe für Privatkunden, Senioren, Familien, Homeoffice und kleine Unternehmen.">
+  <meta name="twitter:image" content="https://www.andreas-goettl.de/assets/og-image.webp">
 
-  <link rel="manifest" href="/site.webmanifest" />
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" as="image" href="assets/hero.webp" imagesrcset="assets/hero.webp">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 
-  <!-- JSON-LD: LocalBusiness -->
+  <script>
+    document.documentElement.classList.remove('no-js');
+    try {
+      const storedTheme = localStorage.getItem('theme');
+      if (storedTheme === 'dark' || storedTheme === 'light') {
+        document.documentElement.dataset.theme = storedTheme;
+      }
+    } catch (error) {}
+  </script>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Andreas Göttl IT Service",
-    "image": "/assets/og-image.webp",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Oberbubach 1a",
-      "addressLocality": "Roßbach (Thanndorf)",
-      "postalCode": "94439",
-      "addressCountry": "DE"
-    },
-    "telephone": "+49 15563 242815",
-    "email": "kontakt@andreas-goettl.de",
-    "areaServed": "Niederbayern",
-    "priceRange": "€€",
-    "url": "https://andreas-goettl.de"
-  }
-  </script>
-
-  <!-- FAQ Schema -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {"@type":"Question","name":"Hilfst du auch bei langsamen PCs?","acceptedAnswer":{"@type":"Answer","text":"Ja, ich optimiere Windows-Systeme, entferne unnötige Programme und verbessere die Leistung."}},
-      {"@type":"Question","name":"Bietest du Fernwartung an?","acceptedAnswer":{"@type":"Answer","text":"Ja, viele Probleme können direkt per Fernwartung gelöst werden."}},
-      {"@type":"Question","name":"Kostet die Ersteinschätzung etwas?","acceptedAnswer":{"@type":"Answer","text":"Nein, die erste Einschätzung ist kostenlos und unverbindlich."}}
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "ProfessionalService"],
+        "@id": "https://www.andreas-goettl.de/#business",
+        "name": "Andreas Göttl IT Service",
+        "description": "Lokaler IT Service, Computerhilfe, WLAN Hilfe, Drucker Hilfe und Fernwartung in Roßbach, Rottal-Inn und Niederbayern.",
+        "url": "https://www.andreas-goettl.de/",
+        "image": "https://www.andreas-goettl.de/assets/og-image.webp",
+        "logo": "https://www.andreas-goettl.de/logo.svg",
+        "telephone": "+4915563242815",
+        "email": "kontakt@andreas-goettl.de",
+        "priceRange": "€€",
+        "founder": {
+          "@type": "Person",
+          "name": "Andreas Göttl"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Oberbubach 1a",
+          "postalCode": "94439",
+          "addressLocality": "Roßbach",
+          "addressRegion": "Bayern",
+          "addressCountry": "DE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 48.583,
+          "longitude": 12.950
+        },
+        "areaServed": [
+          "Roßbach",
+          "Thanndorf",
+          "Pfarrkirchen",
+          "Eggenfelden",
+          "Arnstorf",
+          "Bad Birnbach",
+          "Simbach am Inn",
+          "Rottal-Inn",
+          "Niederbayern"
+        ],
+        "knowsAbout": [
+          "IT Service Roßbach",
+          "Computerhilfe Rottal-Inn",
+          "PC Hilfe Niederbayern",
+          "WLAN Hilfe",
+          "Drucker Hilfe",
+          "Fernwartung",
+          "Computer Service",
+          "IT Support",
+          "Seniorenhilfe Computer"
+        ],
+        "sameAs": []
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.andreas-goettl.de/#website",
+        "url": "https://www.andreas-goettl.de/",
+        "name": "Andreas Göttl IT Service",
+        "publisher": {
+          "@id": "https://www.andreas-goettl.de/#business"
+        },
+        "inLanguage": "de-DE"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.andreas-goettl.de/#webpage",
+        "url": "https://www.andreas-goettl.de/",
+        "name": "IT Service Roßbach | Computerhilfe Rottal-Inn",
+        "isPartOf": {
+          "@id": "https://www.andreas-goettl.de/#website"
+        },
+        "about": {
+          "@id": "https://www.andreas-goettl.de/#business"
+        },
+        "breadcrumb": {
+          "@id": "https://www.andreas-goettl.de/#breadcrumb"
+        },
+        "inLanguage": "de-DE"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.andreas-goettl.de/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Startseite",
+            "item": "https://www.andreas-goettl.de/"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://www.andreas-goettl.de/#services",
+        "name": "IT Leistungen",
+        "itemListElement": [
+          {"@type": "Service", "position": 1, "name": "WLAN verbessern", "areaServed": "Rottal-Inn", "provider": {"@id": "https://www.andreas-goettl.de/#business"}},
+          {"@type": "Service", "position": 2, "name": "Router einrichten", "areaServed": "Rottal-Inn", "provider": {"@id": "https://www.andreas-goettl.de/#business"}},
+          {"@type": "Service", "position": 3, "name": "Mesh und Netzwerk", "areaServed": "Niederbayern", "provider": {"@id": "https://www.andreas-goettl.de/#business"}},
+          {"@type": "Service", "position": 4, "name": "PC Hilfe und Windows Probleme", "areaServed": "Niederbayern", "provider": {"@id": "https://www.andreas-goettl.de/#business"}},
+          {"@type": "Service", "position": 5, "name": "Drucker Hilfe und Scanner", "areaServed": "Rottal-Inn", "provider": {"@id": "https://www.andreas-goettl.de/#business"}},
+          {"@type": "Service", "position": 6, "name": "Backup und Datensicherung", "areaServed": "Niederbayern", "provider": {"@id": "https://www.andreas-goettl.de/#business"}},
+          {"@type": "Service", "position": 7, "name": "Microsoft 365 und E-Mail", "areaServed": "Niederbayern", "provider": {"@id": "https://www.andreas-goettl.de/#business"}},
+          {"@type": "Service", "position": 8, "name": "Fernwartung und allgemeiner IT-Service", "areaServed": "Niederbayern", "provider": {"@id": "https://www.andreas-goettl.de/#business"}}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.andreas-goettl.de/#faq-schema",
+        "mainEntity": [
+          {"@type": "Question", "name": "Welche IT-Probleme werden gelöst?", "acceptedAnswer": {"@type": "Answer", "text": "Andreas Göttl IT Service hilft bei WLAN, Router, Mesh, Netzwerk, LAN, Internetproblemen, PC und Laptop, Windows, Drucker, Scanner, Backup, Datensicherung, neuen PCs, Datenübernahme, Microsoft 365, E-Mail und Fernwartung."}},
+          {"@type": "Question", "name": "Für wen ist der IT Service gedacht?", "acceptedAnswer": {"@type": "Answer", "text": "Der Service richtet sich an Privatkunden, Senioren, Familien, Homeoffice-Nutzer, kleine Unternehmen, Handwerksbetriebe, Ferienwohnungen und Vereine in Roßbach, Rottal-Inn und Niederbayern."}},
+          {"@type": "Question", "name": "Gibt es eine kostenlose Ersteinschätzung?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Die erste Einschätzung per Telefon oder Nachricht ist kostenlos und unverbindlich. Die Kosten werden vor einer Beauftragung klar besprochen."}},
+          {"@type": "Question", "name": "Wird auch Senioren am Computer geholfen?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Die Hilfe wird ruhig, verständlich und ohne Fachchinesisch erklärt, damit Computer, Smartphone, Drucker, E-Mail und Internet sicher genutzt werden können."}},
+          {"@type": "Question", "name": "Ist Hilfe vor Ort oder per Fernwartung möglich?", "acceptedAnswer": {"@type": "Answer", "text": "Beides ist möglich. Viele Software- und Windows-Probleme lassen sich per Fernwartung lösen. Bei WLAN, Netzwerk, Drucker oder neuer Hardware ist ein Vor-Ort-Termin sinnvoll."}},
+          {"@type": "Question", "name": "Wie schnell erfolgt eine Rückmeldung?", "acceptedAnswer": {"@type": "Answer", "text": "Eine Rückmeldung erfolgt meist innerhalb weniger Stunden, abhängig von Terminlage und Dringlichkeit."}},
+          {"@type": "Question", "name": "Was kostet die Computerhilfe?", "acceptedAnswer": {"@type": "Answer", "text": "Die Kosten richten sich nach Aufwand und Art der Hilfe. Vor Beginn werden die Kosten transparent besprochen. Es gibt keine versteckten Kosten."}},
+          {"@type": "Question", "name": "Hilfst du bei neuen PCs und Datenübernahme?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Neue PCs und Laptops werden eingerichtet, Windows aktualisiert, Programme vorbereitet, E-Mail eingebunden und vorhandene Daten übernommen."}},
+          {"@type": "Question", "name": "Hilfst du bei WLAN-Problemen?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. WLAN-Abdeckung, Router-Einstellungen, Mesh-Systeme und Netzwerkprobleme werden geprüft und so verbessert, dass Internet im Alltag stabiler funktioniert."}},
+          {"@type": "Question", "name": "Kannst du bei Druckern und Scannern helfen?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Drucker und Scanner werden installiert, ins Netzwerk eingebunden und bei Verbindungsproblemen oder Treiberfehlern überprüft."}}
+        ]
+      }
     ]
   }
   </script>
-
-  <!-- Service Schema -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Service",
-    "serviceType":"IT Support & Computerhilfe",
-    "provider":{
-      "@type":"LocalBusiness",
-      "name":"Andreas Göttl IT Service"
-    }
-  }
-  </script>
-
 </head>
 
 <body>
-  <header class="header glass">
-    <div class="container nav">
-      <div class="logo">
-        <img src="/logo.svg" alt="Logo" />
-        <span>IT Service Roßbach</span>
-      </div>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
 
-      <nav>
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Andreas Göttl IT Service Startseite">
+        <img src="logo.svg" width="42" height="42" alt="">
+        <span>
+          <strong>Andreas Göttl</strong>
+          <small>IT Service Roßbach</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Hauptnavigation">
         <a href="#leistungen">Leistungen</a>
+        <a href="#ablauf">Ablauf</a>
         <a href="#preise">Preise</a>
         <a href="#faq">FAQ</a>
-        <a href="#kontakt" class="btn small">Kontakt</a>
+        <a href="#kontakt">Kontakt</a>
       </nav>
 
-      <button id="themeToggle" aria-label="Dark Mode umschalten">◐</button>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Farbschema umschalten" aria-pressed="false">
+        <span class="theme-toggle__icon" aria-hidden="true"></span>
+        <span class="theme-toggle__text">Theme</span>
+      </button>
     </div>
   </header>
 
-  <main>
-
-    <!-- HERO -->
-    <section class="hero">
+  <main id="main">
+    <section class="hero section" id="top" aria-labelledby="hero-title">
       <div class="container hero-grid">
-        <div class="hero-text">
-          <h1>IT-Probleme?<br/>Ich helfe schnell und verständlich.</h1>
-          <p class="sub">
-            Computerhilfe, WLAN, Netzwerk & Fernwartung in Roßbach und Niederbayern.
-          </p>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">IT Service aus Roßbach für Rottal-Inn und Niederbayern</p>
+          <h1 id="hero-title">IT-Probleme?<br>Ich helfe schnell und verständlich.</h1>
+          <p class="hero-subtitle">Persönliche Computerhilfe für WLAN, PC, Laptop, Drucker, Netzwerk, Backup, E-Mail und Fernwartung. Klar erklärt, sauber gelöst und ohne unnötige Kosten.</p>
 
-          <div class="trust">
-            <span>✓ ehrliche Beratung</span>
-            <span>✓ keine versteckten Kosten</span>
-            <span>✓ schnelle Hilfe vor Ort & online</span>
+          <ul class="trust-list" aria-label="Vertrauenspunkte">
+            <li>Ehrliche Beratung</li>
+            <li>Kostenlose Ersteinschätzung</li>
+            <li>Vor Ort oder Fernwartung</li>
+          </ul>
+
+          <div class="hero-actions" aria-label="Kontaktmöglichkeiten">
+            <a class="button button-primary" href="tel:+4915563242815">Telefon</a>
+            <a class="button button-secondary" href="https://wa.me/4915563242815" rel="noopener">WhatsApp</a>
+            <a class="button button-ghost" href="mailto:kontakt@andreas-goettl.de">E-Mail</a>
           </div>
 
-          <div class="cta">
-            <a href="tel:+4915563242815" class="btn primary">📞 Anrufen</a>
-            <a href="https://wa.me/4915563242815" class="btn">WhatsApp</a>
-            <a href="mailto:kontakt@andreas-goettl.de" class="btn">E-Mail</a>
-          </div>
+          <p class="response-note">Antwort meist innerhalb weniger Stunden.</p>
         </div>
 
-        <div class="hero-image">
-          <img src="/assets/hero.webp" alt="IT Hilfe im Homeoffice" loading="lazy" />
+        <figure class="hero-media reveal">
+          <img src="assets/hero.webp" width="980" height="735" alt="IT-Hilfe am Laptop mit Router und Notizen im Homeoffice">
+          <figcaption>Computer Service, WLAN Hilfe und IT Support persönlich aus Roßbach.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section-tight" aria-label="Vertrauenssignale">
+      <div class="container">
+        <div class="signal-bar reveal">
+          <span>Verständliche Erklärungen</span>
+          <span>Keine versteckten Kosten</span>
+          <span>Persönliche Betreuung</span>
+          <span>Lokal aus Roßbach</span>
+          <span>Flexible Termine</span>
         </div>
       </div>
     </section>
 
-    <!-- LEISTUNGEN -->
-    <section id="leistungen" class="section">
+    <section class="section" id="leistungen" aria-labelledby="services-title">
       <div class="container">
-        <h2>Leistungen</h2>
+        <div class="section-heading reveal">
+          <p class="eyebrow">Leistungen</p>
+          <h2 id="services-title">IT-Hilfe, die im Alltag wirklich entlastet.</h2>
+          <p>Jede Lösung beginnt mit einer klaren Einschätzung: Was ist kaputt, was ist sinnvoll, was lohnt sich nicht? So bleibt der Aufwand transparent.</p>
+        </div>
 
-        <div class="grid cards">
-
-          <div class="card">
-            <img src="/assets/wlan.webp" alt="WLAN Router Hilfe" loading="lazy">
-            <h3>WLAN & Netzwerk</h3>
-            <p>Besseres WLAN, stabile Verbindung, Mesh-Systeme & Router-Optimierung.</p>
-          </div>
-
-          <div class="card">
-            <img src="/assets/pc.webp" alt="PC Hilfe" loading="lazy">
-            <h3>PC & Windows</h3>
-            <p>Langsame Computer, Windows-Fehler, Einrichtung neuer Geräte.</p>
-          </div>
-
-          <div class="card">
-            <img src="/assets/printer.webp" alt="Drucker Hilfe" loading="lazy">
-            <h3>Drucker & Scanner</h3>
-            <p>Installation, Fehlerbehebung und Netzwerkdrucker Einrichtung.</p>
-          </div>
-
-          <div class="card">
-            <img src="/assets/backup.webp" alt="Datensicherung" loading="lazy">
-            <h3>Backup & Sicherheit</h3>
-            <p>Datensicherung, Schutz vor Datenverlust und sichere Einrichtung.</p>
-          </div>
-
-          <div class="card">
-            <img src="/assets/remote.webp" alt="Fernwartung" loading="lazy">
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <img src="assets/wlan.webp" alt="" loading="lazy" width="640" height="420">
+            <h3>WLAN verbessern</h3>
+            <p>Schwache Funkabdeckung, Abbrüche und langsames Internet werden systematisch geprüft, damit Streaming, Homeoffice und Alltag stabil laufen.</p>
+          </article>
+          <article class="service-card reveal">
+            <img src="assets/router.webp" alt="" loading="lazy" width="640" height="420">
+            <h3>Router</h3>
+            <p>Router werden sauber eingerichtet, abgesichert und verständlich erklärt. Sie wissen danach, was wichtig ist und wo Sie nichts anfassen müssen.</p>
+          </article>
+          <article class="service-card reveal">
+            <img src="assets/mesh.webp" alt="" loading="lazy" width="640" height="420">
+            <h3>Mesh</h3>
+            <p>Mesh-Systeme sorgen für bessere Abdeckung in Haus, Wohnung, Büro oder Ferienwohnung, ohne komplizierte Technik im Alltag.</p>
+          </article>
+          <article class="service-card reveal">
+            <img src="assets/network.webp" alt="" loading="lazy" width="640" height="420">
+            <h3>Netzwerk</h3>
+            <p>Geräte, Freigaben und Verbindungen werden geordnet, damit PC, Drucker, NAS, Smart-TV und Arbeitsplätze zuverlässig zusammenarbeiten.</p>
+          </article>
+          <article class="service-card reveal">
+            <img src="assets/lan.webp" alt="" loading="lazy" width="640" height="420">
+            <h3>LAN</h3>
+            <p>Kabelverbindungen werden geprüft und sinnvoll geplant, wenn WLAN nicht reicht oder stabile Geschwindigkeit wichtig ist.</p>
+          </article>
+          <article class="service-card reveal">
+            <img src="assets/internet.webp" alt="" loading="lazy" width="640" height="420">
+            <h3>Internetprobleme</h3>
+            <p>Ich grenze ein, ob Router, WLAN, Gerät, Anbieter oder Verkabelung die Ursache ist. Das spart Zeit und unnötige Neuanschaffungen.</p>
+          </article>
+          <article class="service-card reveal">
+            <img src="assets/pc.webp" alt="" loading="lazy" width="640" height="420">
+            <h3>PC Hilfe</h3>
+            <p>Fehler werden verständlich analysiert und behoben, damit Ihr Computer wieder zuverlässig für Arbeit, Verein, Familie oder Alltag nutzbar ist.</p>
+          </article>
+          <article class="service-card reveal">
+            <img src="assets/laptop.webp" alt="" loading="lazy" width="640" height="420">
+            <h3>Laptop Hilfe</h3>
+            <p>Laptops werden eingerichtet, bereinigt, aktualisiert und geprüft, damit mobiles Arbeiten ohne ständige Störungen funktioniert.</p>
+          </article>
+          <article class="service-card reveal">
+            <img src="assets/windows.webp" alt="" loading="lazy" width="640" height="420">
+            <h3>Windows Probleme</h3>
+            <p>Updates, Fehlermeldungen, Treiber und Systemeinstellungen werden sauber gelöst, ohne unnötige Neuinstallation, wenn sie vermeidbar ist.</p>
+          </article>
+          <article class="service-card reveal">
+            <img src="assets/slow-computer.webp" alt="" loading="lazy" width="640" height="420">
+            <h3>Computer langsam</h3>
+            <p>Autostart, Speicher, Updates, Programme und Datenträger werden geprüft. Sie bekommen eine ehrliche Einschätzung, ob Optimierung oder Austausch sinnvoll ist.</p>
+          </article>
+          <article class="service-card reveal">
+            <img src="assets/printer.webp" alt="" loading="lazy" width="640" height="420">
+            <h3>Drucker</h3>
+            <p>Drucker werden installiert, verbunden und getestet, damit Drucken vom PC, Laptop oder Smartphone wieder verlässlich klappt.</p>
+          </article>
+          <article class="service-card reveal">
+            <img src="assets/scanner.webp" alt="" loading="lazy" width="640" height="420">
+            <h3>Scanner</h3>
+            <p>Scan-Software, Treiber und Speicherorte werden eingerichtet, damit Dokumente schnell dort landen, wo Sie sie brauchen.</p>
+          </article>
+          <article class="service-card reveal">
+            <img src="assets/backup.webp" alt="" loading="lazy" width="640" height="420">
+            <h3>Backup</h3>
+            <p>Ein passendes Backup-Konzept schützt Fotos, Dokumente und Geschäftsdaten vor Verlust durch Defekt, Bedienfehler oder Schadsoftware.</p>
+          </article>
+          <article class="service-card reveal">
+            <img src="assets/datensicherung.webp" alt="" loading="lazy" width="640" height="420">
+            <h3>Datensicherung</h3>
+            <p>Wichtige Daten werden strukturiert gesichert und wieder auffindbar gemacht, damit Sie im Ernstfall nicht bei null anfangen.</p>
+          </article>
+          <article class="service-card reveal">
+            <img src="assets/new-pc.webp" alt="" loading="lazy" width="640" height="420">
+            <h3>Neue PCs einrichten</h3>
+            <p>Neue Geräte werden alltagstauglich vorbereitet: Windows, Updates, Programme, Sicherheit, Drucker, E-Mail und sinnvolle Grundeinstellungen.</p>
+          </article>
+          <article class="service-card reveal">
+            <img src="assets/data-transfer.webp" alt="" loading="lazy" width="640" height="420">
+            <h3>Datenübernahme</h3>
+            <p>Dokumente, Bilder, Desktop, Browserdaten und E-Mail-Daten werden geordnet auf neue Geräte übertragen, soweit technisch möglich.</p>
+          </article>
+          <article class="service-card reveal">
+            <img src="assets/microsoft-365.webp" alt="" loading="lazy" width="640" height="420">
+            <h3>Microsoft 365</h3>
+            <p>Konten, Office-Apps, OneDrive und Outlook werden so eingerichtet, dass Arbeit, Schule, Verein oder Betrieb reibungsloser laufen.</p>
+          </article>
+          <article class="service-card reveal">
+            <img src="assets/email.webp" alt="" loading="lazy" width="640" height="420">
+            <h3>E-Mail</h3>
+            <p>Postfächer, Programme, Smartphone-Synchronisierung und Fehler bei Versand oder Empfang werden verständlich eingerichtet und geprüft.</p>
+          </article>
+          <article class="service-card reveal">
+            <img src="assets/remote.webp" alt="" loading="lazy" width="640" height="420">
             <h3>Fernwartung</h3>
-            <p>Schnelle Hilfe direkt über das Internet – ohne Wartezeit.</p>
-          </div>
-
+            <p>Viele Probleme lassen sich schnell online lösen. Das spart Anfahrt, wenn es um Software, Einstellungen, E-Mail oder Windows geht.</p>
+          </article>
+          <article class="service-card reveal">
+            <img src="assets/it-service.webp" alt="" loading="lazy" width="640" height="420">
+            <h3>Allgemeiner IT-Service</h3>
+            <p>Wenn das Problem nicht eindeutig ist, sortiere ich die Ursache und empfehle den nächsten sinnvollen Schritt, ehrlich und nachvollziehbar.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- WARUM ICH -->
-    <section class="section alt">
-      <div class="container">
-        <h2>Warum ich</h2>
-        <div class="grid benefits">
-          <div>✓ verständliche Erklärungen</div>
-          <div>✓ persönliche Betreuung</div>
-          <div>✓ flexible Termine</div>
-          <div>✓ vor Ort oder Fernwartung</div>
-          <div>✓ keine unnötigen Kosten</div>
-          <div>✓ lokale Hilfe aus Roßbach</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABLAUF -->
-    <section class="section">
-      <div class="container">
-        <h2>So läuft die Hilfe ab</h2>
-        <div class="steps">
-          <div>1. Kontakt aufnehmen</div>
-          <div>↓</div>
-          <div>2. Kostenlose Ersteinschätzung</div>
-          <div>↓</div>
-          <div>3. Lösung vor Ort oder per Fernwartung</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PREISE -->
-    <section id="preise" class="section alt">
-      <div class="container">
-        <h2>Preise</h2>
-
-        <div class="grid pricing">
-          <div class="price-card">
-            <h3>Ersteinschätzung</h3>
-            <p class="price">0 €</p>
-            <p>Telefonisch oder per Nachricht</p>
+    <section class="section section-muted" id="warum" aria-labelledby="why-title">
+      <div class="container split-grid">
+        <div class="why-intro">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Warum ich</p>
+            <h2 id="why-title">Ruhige Hilfe statt Technikstress.</h2>
+            <p>Gerade bei IT-Problemen zählt nicht nur die technische Lösung. Entscheidend ist, dass Sie verstehen, was passiert und welche Kosten sinnvoll sind.</p>
           </div>
-
-          <div class="price-card highlight">
-            <h3>IT Hilfe</h3>
-            <p class="price">nach Aufwand</p>
-            <p>Transparente Preise vorab</p>
-          </div>
-
-          <div class="price-card">
-            <h3>Fernwartung</h3>
-            <p class="price">flexibel</p>
-            <p>Schnelle Soforthilfe</p>
+          <div class="profile-teaser reveal">
+            <div class="profile-photo" aria-label="Platzhalter für ein Foto von Andreas Göttl">
+              <span aria-hidden="true">AG</span>
+              <img src="assets/me.webp" alt="Andreas Göttl" loading="lazy" width="360" height="360" onerror="this.hidden = true">
+            </div>
+            <div>
+              <strong>Andreas Göttl</strong>
+              <p>Persönlicher Ansprechpartner für verständliche IT-Hilfe in Roßbach und Umgebung.</p>
+            </div>
           </div>
         </div>
-
-        <p class="note">Keine versteckten Kosten. Preise werden vorher besprochen.</p>
-      </div>
-    </section>
-
-    <!-- EINSATZGEBIET -->
-    <section class="section">
-      <div class="container">
-        <h2>Einsatzgebiet</h2>
-        <p>Roßbach · Thanndorf · Pfarrkirchen · Eggenfelden · Arnstorf · Bad Birnbach · Simbach am Inn · Rottal-Inn · Niederbayern</p>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="section alt">
-      <div class="container">
-        <h2>FAQ</h2>
-
-        <details><summary>Hilfst du auch bei langsamen PCs?</summary><p>Ja, ich optimiere Systeme und entferne Bremsen.</p></details>
-        <details><summary>Machst du auch Fernwartung?</summary><p>Ja, viele Probleme lassen sich sofort online lösen.</p></details>
-        <details><summary>Wie schnell bekommst du Zeit?</summary><p>Meist innerhalb weniger Stunden.</p></details>
-        <details><summary>Kostet die Ersteinschätzung etwas?</summary><p>Nein.</p></details>
-        <details><summary>Arbeitest du auch für Firmen?</summary><p>Ja, kleine Betriebe und Büros.</p></details>
-        <details><summary>Hilfst du bei WLAN Problemen?</summary><p>Ja, inkl. Router & Mesh.</p></details>
-        <details><summary>Installierst du neue PCs?</summary><p>Ja inkl. Datenübernahme.</p></details>
-        <details><summary>Machst du Backup Einrichtung?</summary><p>Ja, lokale & Cloud Lösungen.</p></details>
-        <details><summary>Unterstützt du Microsoft 365?</summary><p>Ja, Einrichtung & Fehlerbehebung.</p></details>
-        <details><summary>Wie kontaktierst du dich am besten?</summary><p>Telefon oder WhatsApp.</p></details>
-
-      </div>
-    </section>
-
-    <!-- KONTAKT -->
-    <section id="kontakt" class="section">
-      <div class="container contact">
-        <h2>Kontakt</h2>
-
-        <div class="contact-box">
-          <a class="btn primary" href="tel:+4915563242815">📞 Sofort anrufen</a>
-          <a class="btn" href="https://wa.me/4915563242815">💬 WhatsApp</a>
-          <a class="btn" href="mailto:kontakt@andreas-goettl.de">✉️ E-Mail</a>
+        <div class="benefit-grid">
+          <article class="benefit-card reveal">
+            <h3>Ehrliche Beratung</h3>
+            <p>Ich empfehle nur, was zum Problem passt. Reparatur, Optimierung oder Neukauf werden nüchtern abgewogen.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <h3>Keine unnötigen Kosten</h3>
+            <p>Vor Beginn wird besprochen, welcher Aufwand realistisch ist. Keine versteckten Kosten, keine überraschenden Zusatzpakete.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <h3>Verständliche Erklärungen</h3>
+            <p>Ich erkläre IT ohne Fachchinesisch, besonders für Senioren, Familien und Menschen, die einfach zuverlässig arbeiten möchten.</p>
+          </article>
+          <article class="benefit-card reveal">
+            <h3>Lokal und flexibel</h3>
+            <p>Persönliche Betreuung aus Roßbach, vor Ort im Umkreis oder per Fernwartung, wenn es schneller und sinnvoller ist.</p>
+          </article>
         </div>
-
-        <p>Antwort meist innerhalb weniger Stunden.</p>
       </div>
     </section>
 
+    <section class="section" id="ablauf" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Ablauf</p>
+          <h2 id="process-title">So läuft die Hilfe ab.</h2>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <span>01</span>
+            <h3>Kontakt aufnehmen</h3>
+            <p>Sie melden sich per Telefon, WhatsApp oder E-Mail und beschreiben kurz das Problem.</p>
+          </article>
+          <article class="step-card reveal">
+            <span>02</span>
+            <h3>Kostenlose Ersteinschätzung</h3>
+            <p>Ich schätze ein, was wahrscheinlich nötig ist und ob Fernwartung oder ein Termin vor Ort sinnvoller ist.</p>
+          </article>
+          <article class="step-card reveal">
+            <span>03</span>
+            <h3>Vor Ort oder Fernwartung</h3>
+            <p>Das Problem wird transparent behoben. Sie bekommen eine verständliche Erklärung und klare nächste Schritte.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="preise" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Preise</p>
+          <h2 id="pricing-title">Transparente Hilfe ohne Überraschungen.</h2>
+          <p>Kosten werden vorher besprochen. Keine versteckten Kosten.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card reveal">
+            <p class="price-label">Ersteinschätzung</p>
+            <h3>Kostenlos</h3>
+            <p>Kurze Einschätzung per Telefon, WhatsApp oder E-Mail, damit Sie wissen, ob ich helfen kann.</p>
+          </article>
+          <article class="price-card price-card-featured reveal">
+            <p class="price-label">Vor-Ort-Hilfe</p>
+            <h3>Nach Aufwand</h3>
+            <p>Für WLAN, Drucker, PC, Netzwerk und neue Geräte. Der voraussichtliche Aufwand wird vorher klar besprochen.</p>
+          </article>
+          <article class="price-card reveal">
+            <p class="price-label">Fernwartung</p>
+            <h3>Flexibel</h3>
+            <p>Schnelle Hilfe bei Software, Windows, E-Mail, Microsoft 365 und Einstellungen, sofern technisch möglich.</p>
+          </article>
+        </div>
+        <p class="legal-note reveal">Gemäß §19 UStG wird keine Umsatzsteuer ausgewiesen.</p>
+      </div>
+    </section>
+
+    <section class="section" id="einsatzgebiet" aria-labelledby="area-title">
+      <div class="container area-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Einsatzgebiet</p>
+          <h2 id="area-title">IT Service in Roßbach, Rottal-Inn und Niederbayern.</h2>
+          <p>Vor-Ort-Termine sind im regionalen Umkreis möglich. Viele Themen lassen sich zusätzlich per Fernwartung lösen.</p>
+        </div>
+        <div class="area-tags reveal" aria-label="Orte im Einsatzgebiet">
+          <span>Roßbach</span>
+          <span>Thanndorf</span>
+          <span>Pfarrkirchen</span>
+          <span>Eggenfelden</span>
+          <span>Arnstorf</span>
+          <span>Bad Birnbach</span>
+          <span>Simbach am Inn</span>
+          <span>Rottal-Inn</span>
+          <span>Niederbayern</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">Häufige Fragen zur Computerhilfe.</h2>
+        </div>
+        <div class="faq-list">
+          <details class="reveal">
+            <summary>Welche Probleme werden gelöst?</summary>
+            <p>Ich helfe bei WLAN, Router, Mesh, Netzwerk, LAN, Internetproblemen, PC Hilfe, Laptop Hilfe, Windows Problemen, langsamen Computern, Drucker, Scanner, Backup, Datensicherung, neuen PCs, Datenübernahme, Microsoft 365, E-Mail und Fernwartung.</p>
+          </details>
+          <details class="reveal">
+            <summary>Für wen ist der Service gedacht?</summary>
+            <p>Der IT Service richtet sich an Privatkunden, Senioren, Familien, Homeoffice-Nutzer, kleine Unternehmen, Handwerksbetriebe, Ferienwohnungen und Vereine in Roßbach, Rottal-Inn und Niederbayern.</p>
+          </details>
+          <details class="reveal">
+            <summary>Gibt es eine kostenlose Ersteinschätzung?</summary>
+            <p>Ja. Die erste Einschätzung per Telefon oder Nachricht ist kostenlos und unverbindlich. Danach entscheiden Sie in Ruhe, ob ein Termin sinnvoll ist.</p>
+          </details>
+          <details class="reveal">
+            <summary>Wird auch Senioren geholfen?</summary>
+            <p>Ja. Seniorenhilfe am Computer gehört ausdrücklich dazu. Ich erkläre ruhig, verständlich und ohne Fachbegriffe, damit Internet, E-Mail, Drucker und PC sicher genutzt werden können.</p>
+          </details>
+          <details class="reveal">
+            <summary>Hilfst du vor Ort oder per Fernwartung?</summary>
+            <p>Beides ist möglich. Fernwartung eignet sich für Software, E-Mail, Windows und Einstellungen. Vor Ort ist sinnvoll bei WLAN, Router, Drucker, Netzwerk, neuer Hardware oder unklaren Fehlern.</p>
+          </details>
+          <details class="reveal">
+            <summary>Wie schnell erfolgt eine Rückmeldung?</summary>
+            <p>Eine Rückmeldung erfolgt meist innerhalb weniger Stunden. Bei dringenden Problemen ist ein Anruf oder eine WhatsApp-Nachricht am schnellsten.</p>
+          </details>
+          <details class="reveal">
+            <summary>Was kostet die Hilfe?</summary>
+            <p>Die Kosten richten sich nach Aufwand und Art der Hilfe. Vor Beginn werden die Kosten klar besprochen. Es gibt keine versteckten Kosten.</p>
+          </details>
+          <details class="reveal">
+            <summary>Hilfst du bei neuen PCs?</summary>
+            <p>Ja. Ich richte neue PCs und Laptops ein, installiere Updates, übernehme Daten, binde Drucker und E-Mail ein und bereite das Gerät alltagstauglich vor.</p>
+          </details>
+          <details class="reveal">
+            <summary>Hilfst du bei WLAN-Problemen?</summary>
+            <p>Ja. Ich prüfe Router, WLAN-Abdeckung, Mesh-Systeme, Störquellen und Geräteeinstellungen, damit das Internet in Haus, Wohnung, Büro oder Ferienwohnung stabiler läuft.</p>
+          </details>
+          <details class="reveal">
+            <summary>Kannst du bei Druckern helfen?</summary>
+            <p>Ja. Ich helfe bei Installation, Netzwerkdruckern, Treibern, Scanner-Funktionen und Verbindungsproblemen mit Windows, Laptop oder Smartphone.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="kontakt" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Kontakt</p>
+          <h2 id="contact-title">Kurz melden. Problem schildern. Einschätzung bekommen.</h2>
+          <p>Antwort meist innerhalb weniger Stunden. Für schnelle Rückfragen sind Telefon oder WhatsApp am besten.</p>
+          <div class="contact-actions">
+            <a class="button button-primary" href="tel:+4915563242815">+49 15563 242815</a>
+            <a class="button button-secondary" href="https://wa.me/4915563242815" rel="noopener">WhatsApp schreiben</a>
+            <a class="button button-ghost" href="mailto:kontakt@andreas-goettl.de">kontakt@andreas-goettl.de</a>
+          </div>
+        </div>
+        <address class="contact-card reveal">
+          <strong>Andreas Göttl IT Service</strong>
+          <span>Andreas Göttl, Einzelunternehmen</span>
+          <span>Oberbubach 1a</span>
+          <span>94439 Roßbach, Ortsteil Thanndorf</span>
+          <span>Deutschland</span>
+          <a href="tel:+4915563242815">+49 15563 242815</a>
+          <a href="mailto:kontakt@andreas-goettl.de">kontakt@andreas-goettl.de</a>
+        </address>
+      </div>
+    </section>
+
+    <section class="section section-muted legal-section" id="impressum" aria-labelledby="imprint-title">
+      <div class="container legal-grid">
+        <div>
+          <p class="eyebrow">Rechtliches</p>
+          <h2 id="imprint-title">Impressum</h2>
+        </div>
+        <div class="legal-content">
+          <h3>Angaben gemäß § 5 TMG</h3>
+          <p>Andreas Göttl IT Service<br>Inhaber: Andreas Göttl<br>Einzelunternehmen<br>Oberbubach 1a<br>94439 Roßbach, Ortsteil Thanndorf<br>Deutschland</p>
+          <h3>Kontakt</h3>
+          <p>Telefon: <a href="tel:+4915563242815">+49 15563 242815</a><br>E-Mail: <a href="mailto:kontakt@andreas-goettl.de">kontakt@andreas-goettl.de</a></p>
+          <h3>Umsatzsteuer</h3>
+          <p>Gemäß §19 UStG wird keine Umsatzsteuer ausgewiesen.</p>
+          <h3>Verantwortlich für den Inhalt</h3>
+          <p>Andreas Göttl, Oberbubach 1a, 94439 Roßbach, Deutschland.</p>
+          <h3>EU-Streitschlichtung und Verbraucherstreitbeilegung</h3>
+          <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung bereit. Ich bin nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section legal-section" id="datenschutz" aria-labelledby="privacy-title">
+      <div class="container legal-grid">
+        <div>
+          <p class="eyebrow">Datenschutz</p>
+          <h2 id="privacy-title">Datenschutzerklärung</h2>
+        </div>
+        <div class="legal-content">
+          <h3>1. Verantwortlicher</h3>
+          <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist Andreas Göttl, Andreas Göttl IT Service, Oberbubach 1a, 94439 Roßbach, Deutschland, E-Mail: <a href="mailto:kontakt@andreas-goettl.de">kontakt@andreas-goettl.de</a>.</p>
+          <h3>2. Allgemeine Hinweise</h3>
+          <p>Diese Website dient der Information über IT-Dienstleistungen und der Kontaktaufnahme. Personenbezogene Daten werden nur verarbeitet, soweit dies zur Bereitstellung der Website, zur Bearbeitung von Anfragen oder zur Erfüllung rechtlicher Pflichten erforderlich ist.</p>
+          <h3>3. Zugriffsdaten beim Besuch der Website</h3>
+          <p>Beim Aufruf der Website können durch den Hostinganbieter technisch notwendige Zugriffsdaten verarbeitet werden, etwa IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Datei, Browsertyp, Betriebssystem und Referrer. Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO, um die Website sicher und zuverlässig bereitzustellen.</p>
+          <h3>4. Kontaktaufnahme</h3>
+          <p>Wenn Sie per Telefon, WhatsApp oder E-Mail Kontakt aufnehmen, werden die von Ihnen übermittelten Angaben zur Bearbeitung der Anfrage verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, sofern die Anfrage mit einer Leistung zusammenhängt, ansonsten Art. 6 Abs. 1 lit. f DSGVO.</p>
+          <h3>5. WhatsApp</h3>
+          <p>Bei Nutzung des WhatsApp-Links gelten zusätzlich die Datenschutzbedingungen des jeweiligen Anbieters. Nutzen Sie alternativ Telefon oder E-Mail, wenn Sie WhatsApp nicht verwenden möchten.</p>
+          <h3>6. Cookies, Tracking und externe Schriftarten</h3>
+          <p>Diese Website verwendet kein Analyse-Tracking und lädt keine externen Schriftarten. Die Theme-Auswahl für Hell- oder Dunkelmodus wird ausschließlich lokal im Browser über localStorage gespeichert und nicht an mich übertragen.</p>
+          <h3>7. Speicherdauer</h3>
+          <p>Personenbezogene Daten werden nur so lange gespeichert, wie es für die Bearbeitung der Anfrage, die Vertragsabwicklung oder gesetzliche Aufbewahrungspflichten erforderlich ist.</p>
+          <h3>8. Ihre Rechte</h3>
+          <p>Sie haben nach Maßgabe der DSGVO das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Außerdem besteht ein Beschwerderecht bei einer zuständigen Datenschutzaufsichtsbehörde.</p>
+          <h3>9. Datensicherheit</h3>
+          <p>Ich treffe angemessene technische und organisatorische Maßnahmen, um personenbezogene Daten vor Verlust, Missbrauch und unberechtigtem Zugriff zu schützen.</p>
+          <h3>10. Aktualität</h3>
+          <p>Diese Datenschutzerklärung kann angepasst werden, wenn sich technische oder rechtliche Anforderungen ändern.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>Andreas Göttl IT Service · Roßbach (Niederbayern)</p>
-      <p>§19 UStG Kleinunternehmer – keine Umsatzsteuer ausgewiesen</p>
-
-      <div class="legal">
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year></span> Andreas Göttl IT Service</p>
+      <nav aria-label="Footer Navigation">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#kontakt">Kontakt</a>
         <a href="#impressum">Impressum</a>
         <a href="#datenschutz">Datenschutz</a>
-      </div>
+      </nav>
     </div>
   </footer>
-
-  <!-- IMPRESSUM -->
-  <section id="impressum" class="legal-page">
-    <div class="container">
-      <h2>Impressum</h2>
-      <p><strong>Andreas Göttl IT Service</strong></p>
-      <p>Oberbubach 1a, 94439 Roßbach (Thanndorf), Deutschland</p>
-      <p>Telefon: +49 15563 242815</p>
-      <p>E-Mail: kontakt@andreas-goettl.de</p>
-      <p>Einzelunternehmen</p>
-    </div>
-  </section>
-
-  <!-- DATENSCHUTZ -->
-  <section id="datenschutz" class="legal-page">
-    <div class="container">
-      <h2>Datenschutz</h2>
-      <p>Diese Website verarbeitet keine personenbezogenen Daten ohne Zweck. Kontakt erfolgt freiwillig per Telefon, E-Mail oder WhatsApp.</p>
-      <p>Es werden keine Tracking-Cookies eingesetzt.</p>
-    </div>
-  </section>
-
 </body>
 </html>

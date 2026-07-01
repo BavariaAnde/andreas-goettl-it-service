@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Andreas Göttl IT Service">
+  <rect width="64" height="64" rx="14" fill="#071426"/>
+  <path d="M16 46 29 16h6l13 30h-7l-3-7H26l-3 7h-7Zm13-13h7l-4-10-3 10Z" fill="#f7f5ef"/>
+  <circle cx="46" cy="18" r="5" fill="#55c89a"/>
+</svg>

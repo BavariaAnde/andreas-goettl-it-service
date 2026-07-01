@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Andreas Göttl IT Service Logo</title>
+  <desc id="desc">Monogramm AG mit grünem Akzent für Andreas Göttl IT Service.</desc>
+  <rect width="512" height="512" rx="112" fill="#071426"/>
+  <path d="M138 360 236 128h44l98 232h-52l-21-53H210l-21 53h-51Zm89-95h61l-30-78-31 78Z" fill="#f7f5ef"/>
+  <path d="M333 212c-24 0-43 20-43 47s19 48 43 48c18 0 31-8 40-22h-44v-40h92v18c0 56-36 99-90 99-55 0-96-43-96-103 0-58 42-102 98-102 34 0 62 15 79 40l-38 27c-10-8-22-12-41-12Z" fill="#55c89a" opacity=".95"/>
+</svg>

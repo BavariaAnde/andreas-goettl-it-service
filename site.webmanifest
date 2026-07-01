@@ -1,0 +1,19 @@
+{
+  "name": "Andreas Göttl IT Service",
+  "short_name": "Göttl IT",
+  "description": "IT Service Roßbach, Computerhilfe Rottal-Inn und PC Hilfe Niederbayern.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#f7f5ef",
+  "theme_color": "#2f8d68",
+  "lang": "de-DE",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
