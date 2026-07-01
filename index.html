@@ -1,166 +1,263 @@
-<!-- ================= FINAL VERSION ================= -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>Andreas Göttl IT Service | IT-Hilfe in Roßbach (Rottal-Inn)</title>
+<title>IT-Service Roßbach | Andreas Göttl IT Hilfe Rottal-Inn</title>
 
-  <meta name="description" content="IT-Hilfe in Roßbach (Oberbubach, Thanndorf) im Raum Rottal-Inn. Hilfe bei WLAN, PC, Drucker, Backup und Einrichtung – kostenlose Erstberatung per Telefon oder Nachricht." />
-  <meta name="theme-color" content="#f7f6f2" />
-  <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://andreas-goettl.de/" />
+<meta name="description" content="IT-Hilfe in Roßbach (Rottal-Inn, Niederbayern). PC-, WLAN-, Drucker- und Backup-Service für Privatkunden, Senioren und kleine Betriebe. Ehrliche Beratung ohne unnötige Kosten."/>
+<meta name="robots" content="index,follow"/>
+<meta name="theme-color" content="#f6f7f9"/>
 
-  <meta property="og:title" content="Andreas Göttl IT Service | IT-Hilfe in Roßbach" />
-  <meta property="og:description" content="IT-Hilfe für Privatkunden, Senioren, kleine Betriebe im Raum Rottal-Inn – kostenlose Erstberatung." />
-  <meta property="og:type" content="website" />
+<style>
+:root{
+  --bg:#f6f7f9;
+  --card:#ffffff;
+  --text:#1c2430;
+  --muted:#5b6675;
+  --primary:#1f4b99;
+  --accent:#2f9e6a;
+  --border:#e6e9ef;
+  --radius:16px;
+  --shadow:0 10px 30px rgba(0,0,0,.06);
+  --max:1100px;
+  --font:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+}
 
-  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=zodiak@400,700&display=swap" rel="stylesheet">
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:var(--font);
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
 
-  <!-- (CSS bleibt wie bei dir – unverändert, sehr gut!) -->
+.container{max-width:var(--max);margin:auto;padding:24px}
+
+header{
+  position:sticky;top:0;
+  background:rgba(246,247,249,.9);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border);
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{font-weight:700}
+
+.hero{
+  padding:70px 24px;
+  text-align:left;
+}
+
+h1{
+  font-size:clamp(28px,4vw,48px);
+  line-height:1.1;
+}
+
+p{color:var(--muted);margin-top:10px}
+
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+
+.btn{
+  padding:12px 18px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:600;
+  display:inline-block;
+  border:1px solid var(--border);
+}
+
+.btn-primary{background:var(--primary);color:white;border:none}
+.btn-accent{background:var(--accent);color:white;border:none}
+.btn:hover{opacity:.9}
+
+.section{padding:60px 24px}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:16px;
+}
+
+.card{
+  background:var(--card);
+  padding:20px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  border:1px solid var(--border);
+}
+
+h2{font-size:28px;margin-bottom:20px}
+
+.badge{
+  display:inline-block;
+  background:#e9f5ff;
+  color:var(--primary);
+  padding:6px 12px;
+  border-radius:999px;
+  font-size:12px;
+  margin-bottom:10px;
+}
+
+.steps{
+  display:grid;
+  gap:12px;
+}
+
+.step{
+  background:var(--card);
+  padding:18px;
+  border-radius:var(--radius);
+  border:1px solid var(--border);
+}
+
+footer{
+  padding:40px 24px;
+  text-align:center;
+  color:var(--muted);
+  font-size:14px;
+  border-top:1px solid var(--border);
+}
+
+.small{font-size:13px;color:var(--muted)}
+
+a{color:inherit}
+</style>
 </head>
 
 <body>
 
-<header class="header">
-  <div class="container header-inner">
-
-    <a class="brand" href="#start">
-      <span class="brand-text">
-        Andreas Göttl IT Service
-        <small>Roßbach (Oberbubach / Thanndorf)</small>
-      </span>
-    </a>
-
-    <nav class="nav">
-      <a href="#leistungen">Leistungen</a>
-      <a href="#preise">Preise</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
-
-    <div class="header-actions">
-      <a class="btn btn-primary" href="#kontakt">Kostenlos anfragen</a>
-    </div>
-
-  </div>
+<header>
+<div class="container">
+<nav>
+<div class="logo">Andreas Göttl IT-Service</div>
+<div>
+<a class="btn btn-accent" href="#kontakt">Kontakt</a>
+</div>
+</nav>
+</div>
 </header>
 
-<main>
+<section class="hero container">
+<span class="badge">IT-Hilfe in Roßbach · Rottal-Inn</span>
 
-<section class="hero" id="start">
-  <div class="container hero-grid">
+<h1>IT-Probleme?<br>Ich helfe schnell und verständlich.</h1>
 
-    <div>
-      <h1>IT-Probleme? Ich helfe schnell und verständlich.</h1>
+<p>
+PC, WLAN, Drucker oder Backup-Probleme? Ich unterstütze Privatkunden, Senioren
+und kleine Betriebe in der Region – ehrlich, direkt und ohne unnötige Kosten.
+</p>
 
-      <p class="lead">
-        IT-Hilfe für Privatkunden, Senioren, kleine Betriebe und Vereine in Roßbach (Oberbubach / Thanndorf) und Umgebung.
-        <strong>Kostenlose Erstberatung per Telefon oder Nachricht.</strong>
-      </p>
-
-      <div class="btn-row">
-        <a class="btn btn-primary" href="#kontakt">Kostenlose Erstberatung</a>
-
-        <a class="btn btn-whatsapp"
-           href="https://wa.me/4915563242815?text=Servus%20Andreas%2C%20ich%20brauche%20IT-Hilfe."
-           target="_blank">
-          WhatsApp
-        </a>
-
-        <a class="btn btn-secondary" href="tel:+4915563242815">
-          Anrufen
-        </a>
-      </div>
-
-      <ul class="list">
-        <li>✔ WLAN, PC, Drucker, Backup, Einrichtung</li>
-        <li>✔ Vor Ort oder per Fernwartung</li>
-        <li>✔ Ehrliche Einschätzung statt unnötiger Arbeit</li>
-      </ul>
-    </div>
-
-  </div>
+<div class="btns">
+<a class="btn btn-primary" href="tel:+4915563242815">📞 Anrufen</a>
+<a class="btn btn-accent" href="https://wa.me/4915563242815">💬 WhatsApp</a>
+<a class="btn" href="#leistungen">Leistungen ansehen</a>
+</div>
 </section>
 
-<section class="section" id="leistungen">
-  <div class="container">
+<section class="section container" id="leistungen">
+<h2>Leistungen</h2>
 
-    <h2>Leistungen</h2>
+<div class="grid">
 
-    <div class="cards">
-      <div class="card">WLAN & Internet Probleme</div>
-      <div class="card">PC & Laptop Hilfe</div>
-      <div class="card">Drucker Einrichtung</div>
-      <div class="card">Backup & Datensicherung</div>
-      <div class="card">Fernwartung</div>
-      <div class="card">IT für kleine Betriebe</div>
-    </div>
+<div class="card">
+<h3>🌐 WLAN & Internet</h3>
+<p>Probleme mit Verbindung, Reichweite oder Geschwindigkeit.</p>
+</div>
 
-  </div>
+<div class="card">
+<h3>💻 PC & Laptop</h3>
+<p>Einrichtung, Fehlerbehebung, Optimierung und Neuinstallation.</p>
+</div>
+
+<div class="card">
+<h3>🖨️ Drucker & Geräte</h3>
+<p>Installation und Fehlerbehebung von Druckern und Scannern.</p>
+</div>
+
+<div class="card">
+<h3>💾 Backup & Daten</h3>
+<p>Sichere Datensicherung für wichtige Dateien und Fotos.</p>
+</div>
+
+<div class="card">
+<h3>🛠️ Fernwartung</h3>
+<p>Schnelle Hilfe per Remote-Verbindung bei Softwareproblemen.</p>
+</div>
+
+</div>
 </section>
 
-<section class="section" id="preise">
-  <div class="container">
+<section class="section container">
+<h2>So läuft die Hilfe ab</h2>
 
-    <h2>Preise</h2>
+<div class="steps">
 
-    <p><strong>Kostenlose Erstberatung (Telefon oder Nachricht)</strong> – ich schaue zuerst, was überhaupt sinnvoll ist.</p>
+<div class="step">
+<strong>1. Kontakt aufnehmen</strong>
+<p>Kurz per Telefon, WhatsApp oder Mail erklären, was nicht funktioniert.</p>
+</div>
 
-    <ul>
-      <li>Vor-Ort Hilfe: ab 65 € / Stunde</li>
-      <li>Fernwartung: ab 55 € / Stunde</li>
-      <li>WLAN Check: ab 99 €</li>
-    </ul>
+<div class="step">
+<strong>2. Einschätzung</strong>
+<p>Ich sage ehrlich, ob Fernwartung oder Vor-Ort sinnvoll ist.</p>
+</div>
 
-  </div>
+<div class="step">
+<strong>3. Lösung</strong>
+<p>Schnelle und verständliche Behebung ohne unnötige Kosten.</p>
+</div>
+
+</div>
 </section>
 
-<section class="section" id="kontakt">
-  <div class="container">
+<section class="section container">
+<h2>Preise</h2>
 
-    <h2>Kontakt</h2>
+<div class="grid">
 
-    <p><strong>Kostenlose Erstberatung – einfach kurz melden.</strong></p>
+<div class="card">
+<strong>Vor-Ort Hilfe</strong>
+<p>ab 65 € / Stunde</p>
+</div>
 
-    <p>Telefon: <a href="tel:+4915563242815">+49 15563 242815</a></p>
-    <p>E-Mail: kontakt@andreas-goettl.de</p>
+<div class="card">
+<strong>Fernwartung</strong>
+<p>ab 55 € / Stunde</p>
+</div>
 
-    <a class="btn btn-whatsapp"
-       href="https://wa.me/4915563242815?text=Servus%20Andreas%2C%20ich%20brauche%20IT-Hilfe."
-       target="_blank">
-      WhatsApp schreiben
-    </a>
+<div class="card">
+<strong>WLAN Check</strong>
+<p>ab 99 €</p>
+</div>
 
-  </div>
+</div>
+
+<p class="small">
+Kostenlose Erstberatung per Telefon oder Nachricht – ich schaue zuerst, ob und wie ich helfen kann.
+</p>
 </section>
 
-<section class="section" id="rechtliches">
-  <div class="container">
+<section class="section container" id="kontakt">
+<h2>Kontakt</h2>
 
-    <h2>Impressum</h2>
+<p><strong>Kostenlose Erstberatung</strong> – einfach kurz melden.</p>
 
-    <p>
-      Andreas Göttl IT Service<br>
-      Oberbubach 1a<br>
-      94439 Roßbach (Thanndorf)<br>
-      Deutschland
-    </p>
-
-    <p>Kontakt: kontakt@andreas-goettl.de</p>
-    <p>Telefon: +49 15563 242815</p>
-
-    <p><strong>Kleinunternehmer nach §19 UStG</strong></p>
-
-  </div>
+<p>📍 Roßbach (Oberbubach / Thanndorf), Rottal-Inn</p>
+<p>📞 <a href="tel:+4915563242815">+49 15563 242815</a></p>
+<p>💬 <a href="https://wa.me/4915563242815">WhatsApp schreiben</a></p>
+<p>✉️ kontakt@andreas-goettl.de</p>
 </section>
-
-</main>
 
 <footer>
-  <div class="container">
-    © Andreas Göttl IT Service
-  </div>
+<p>© Andreas Göttl IT-Service · Roßbach · Rottal-Inn</p>
+<p class="small">Ehrliche IT-Hilfe ohne unnötige Kosten</p>
 </footer>
 
 </body>
