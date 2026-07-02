@@ -629,6 +629,12 @@ h3 {
   line-height: 1.7;
 }
 
+.modal-content ul {
+  margin: 0 0 12px;
+  padding-left: 20px;
+  line-height: 1.7;
+}
+
 .modal-content a {
   color: var(--color-accent-strong);
   text-decoration: underline;
