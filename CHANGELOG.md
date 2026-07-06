@@ -5,7 +5,8 @@ Farbwelt (#f5f1e8, Light/Dark) wurden dabei nicht angetastet.
 
 ## 2026-07-06
 
-**SEO & Auffindbarkeit**
+### SEO & Auffindbarkeit
+
 - JSON-LD: `priceRange` von generisch "€€" auf konkret "50 €/Std." geändert
   und `openingHoursSpecification` mit den echten Erreichbarkeitszeiten
   ergänzt (Mo–Do 18–20:30, Fr 13–20:30, Sa/So 9–13 Uhr).
@@ -15,7 +16,8 @@ Farbwelt (#f5f1e8, Light/Dark) wurden dabei nicht angetastet.
 - Alt-Texte aller Bilder geprüft: waren bereits durchgängig beschreibend,
   keine Änderung nötig außer beim neuen Bild.
 
-**Inhalt**
+### Inhalt
+
 - Neue Leistungskarte "Smartphone und Tablet" im Leistungen-Bereich
   ergänzt (Einrichtung, Fotos sichern, Apps) inkl. Eintrag in der
   JSON-LD-Leistungsliste.
@@ -28,7 +30,8 @@ Farbwelt (#f5f1e8, Light/Dark) wurden dabei nicht angetastet.
   aber ebenfalls auskommentiert. Aktivierung erst nach
   Nebentätigkeits-Zustimmung und wenn die Profile live sind.
 
-**Technik & Qualität**
+### Technik & Qualität
+
 - Kontrastwerte (Text/Hintergrund, hell und dunkel) rechnerisch geprüft:
   alle Kombinationen liegen über dem WCAG-AA-Grenzwert von 4.5:1.
 - Fokus-Zustände für Tastaturbedienung, Lazy-Loading bei Bildern unterhalb
