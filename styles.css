@@ -553,6 +553,16 @@ h3 {
   text-decoration: none;
 }
 
+.footer-freelance-links {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.footer-freelance-links a {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 .modal {
   position: fixed;
   top: 0;
