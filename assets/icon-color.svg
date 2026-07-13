@@ -1,0 +1,10 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1b4b4a"></stop><stop offset="100%" stop-color="#0f3433"></stop></linearGradient></defs>
+  <circle cx="100" cy="100" r="96" fill="url(#g)"></circle>
+  <circle cx="100" cy="100" r="96" fill="none" stroke="#d98e4a" stroke-width="2.5" opacity="0.6"></circle>
+  <text x="98" y="128" font-family="Poppins, sans-serif" font-weight="700" font-size="78" letter-spacing="-2" text-anchor="middle" fill="#f5f1e8">AG</text>
+  <g transform="translate(138,62)" stroke="#d98e4a" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M -16 4 A 16 16 0 0 1 16 4"></path><path d="M -9 11 A 9 9 0 0 1 9 11"></path>
+  </g>
+  <circle cx="138" cy="73" r="4" fill="#d98e4a"></circle>
+</svg>
