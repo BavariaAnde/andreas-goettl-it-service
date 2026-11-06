@@ -2,6 +2,15 @@
 
 Produktionsreife One-Page-Website für GitHub Pages.
 
+## Einblicke in die Oberfläche
+
+Echte Browseraufnahme der öffentlichen Startseite https://www.andreas-goettl.de/. Kein nachgebautes oder KI-generiertes Interface.
+
+![Startseite von Andreas Göttl IT Service](docs/media/it-service-preview.webp)
+
+Aufgenommen am 06.11.2026. [Herkunft und Aktualisierung](docs/media/README.md).
+
+
 ## Inhalt
 
 - `index.html`: Semantische One-Page-Website mit SEO, JSON-LD, Impressum und Datenschutz.
@@ -42,3 +51,4 @@ GitHub-Pages-Unterordner (`username.github.io/repo-name/`).
 - Läuft statisch direkt auf GitHub Pages.
 - Theme-Auswahl (hell/dunkel) wird lokal im Browser gespeichert.
 - Die Website nutzt kein Tracking und keine Cookies.
+
