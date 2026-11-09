@@ -952,7 +952,7 @@ h3 {
 .section{padding-block:clamp(36px,5vw,64px)}
 .hero{padding-block:32px 40px}
 .hero-grid{gap:32px}
-.hero h1{max-width:21ch;font-size:clamp(1.9rem,3.6vw,2.65rem);line-height:1.2}
+.hero h1{max-width:24ch;font-size:clamp(1.9rem,3.6vw,2.65rem);line-height:1.2;text-wrap:balance}
 .hero-subtitle{max-width:52ch;margin-bottom:14px}
 .hero .trust-badge{margin-top:14px;padding:0;border:0;background:none;font-size:.88rem;line-height:1.6}
 .hero-actions{margin-top:18px}
@@ -1048,14 +1048,14 @@ section[id],#warum-ich,#einzugsgebiet,.contact-faq{scroll-margin-top:0}
   margin: 0 0 8px;
   font-size: 1.05rem;
   line-height: 1.4;
-  min-height: 2.8em;
+  min-height: 0;
 }
 .offer-benefit {
   color: var(--color-muted);
   margin: 0 0 16px;
   font-size: .9rem;
   line-height: 1.6;
-  min-height: 3.2em;
+  min-height: 0;
 }
 .offer-services {
   display: grid;
@@ -1144,7 +1144,7 @@ section[id],#warum-ich,#einzugsgebiet,.contact-faq{scroll-margin-top:0}
   gap: 12px 24px;
   padding: 18px 0 0;
 }
-.offer-price p { margin: 0; font-size: .94rem; }
+.offer-price p { margin: 0; max-width: 65ch; font-size: .94rem; text-wrap: pretty; }
 .offer-price strong { color: var(--color-heading); }
 .offer-price p > span { font-size: .84rem; color: var(--color-muted); }
 .offer-price > a { flex-shrink: 0; }
@@ -1162,10 +1162,10 @@ section[id],#warum-ich,#einzugsgebiet,.contact-faq{scroll-margin-top:0}
 }
 @media (max-width: 599px) {
   .offer-card { display: block; position: relative; }
-  .offer-media { position: absolute; top: 16px; right: 16px; width: 56px; height: 56px; min-height: 0; border-radius: 8px; }
+  .offer-media { position: static; float: right; margin: 16px 16px 8px 12px; width: 56px; height: 56px; min-height: 0; border-radius: 8px; }
   .offer-media--projects > img { object-position: 25% top; }
   .offer-body { padding: 16px 16px 0; }
-  .offer-body h3 { padding-right: 78px; min-height: 2.8em; font-size: 1rem; margin-bottom: 12px; }
+  .offer-body h3 { padding-right: 0; min-height: 0; font-size: 1rem; margin-bottom: 8px; }
   .offer-benefit { max-width: 34ch; font-size: .88rem; }
   .offer-price { align-items: flex-start; flex-direction: column; gap: 4px; }
 }

@@ -3,6 +3,14 @@
 Änderungen an der Website von Andreas Göttl IT Service. Ton, Sie-Anrede und
 Farbwelt (#f5f1e8, Light/Dark) wurden dabei nicht angetastet.
 
+## 2026-11-09 – Kundentexte und Textfluss geschärft
+
+- Einstieg konkretisiert: Computerhilfe und Websites aus Roßbach, mit verständlichen Beispielen für Privatkunden, Betriebe und Vereine. Allgemeine Nutzensätze durch konkrete Anliegen und Tätigkeiten ersetzt.
+- Kurze Kartenüberschriften und Leistungszeilen ohne unnötig lange Sammelbegriffe. Profilverweis nennt echte Arbeitsbeispiele; Kontakt beschreibt den nächsten Schritt.
+- Erzwungene Umbrüche aus Hauptüberschrift und Preiszeile entfernt. Reservierte Leerzeilen unter Kartentiteln und Nutzensätzen entfernt; mobile Vorschaubilder lassen den Text natürlich umfließen statt durch fest reservierte Überschriftenbreiten zusätzliche Umbrüche zu erzeugen.
+- Vorhandene Fotos, Projektaufnahmen und 50 €/Stunde erhalten.
+- Geprüft: 320/390/760/999/1024/1440px in Light und Dark, keine erzwungenen Umbrüche im Hauptinhalt, drei Angebote und neun Leistungen, keine defekten geladenen Bilder oder horizontaler Überlauf. Kartenüberschriften ab 390px in einer Zeile; auf 320px darf die Web-Überschrift natürlich umbrechen.
+
 ## 2026-11-09 – Fotogestaltung wiederhergestellt
 
 - Letzte Änderung an Layout und Bildsprache zurückgenommen: ursprüngliche drei Leistungskarten mit Fotos wiederhergestellt, SVG-Illustrationen entfernt, ursprünglicher Einstieg und persönlicher Bereich wiederhergestellt.
