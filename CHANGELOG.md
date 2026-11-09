@@ -3,6 +3,17 @@
 Änderungen an der Website von Andreas Göttl IT Service. Ton, Sie-Anrede und
 Farbwelt (#f5f1e8, Light/Dark) wurden dabei nicht angetastet.
 
+## 2026-11-09 – Persönliches Profil sichtbar einbinden
+
+- Früher, untergeordneter Profilhinweis im Einstieg: „Lernen Sie mich und meine Projekte kennen“.
+- Hauptnavigation „Über mich“ führt zum neuen Abschnitt #profil.
+- Eigenständiger Bereich „Der Mensch hinter dem IT-Service“ erklärt Kunden den Nutzen der persönlichen Website, mit Hauptverweis zum Profil und Direkteinstiegen ins Vereinsprojekt sowie in den Blog.
+- Aussagekräftigerer Link am bestehenden Porträt und „Profil, Projekte & Blog“ im Footer.
+- Sie-Anrede, bestehende Farbwelt und Kontaktwege erhalten. Keine neuen Marketingzahlen, Referenzen oder Kundenbewertungen ergänzt. Keine eingebetteten Inhalte oder neuen externen Skripte.
+- Responsives Layout, Tastaturfokus, dezente Hover-Bewegung und Reduced-Motion-Alternative; keine zusätzliche JavaScript-Logik erforderlich.
+- Geprüft: sechs Breiten (320, 390, 760, 768, 1024, 1440px) in beiden Themes ohne horizontalen Überlauf oder defekte geladene Bilder; mobile Navigation öffnet/schließt korrekt. Alle drei neuen externen Ziele im Browser aufgerufen und Rückweg geprüft. Interne Anker und eindeutige IDs geprüft, vorhandenes JavaScript syntaktisch gültig.
+- Änderungen im Review-Branch; kein Produktionsdeployment ausgeführt.
+
 ## 2026-07-06
 
 ### SEO & Auffindbarkeit
