@@ -3,6 +3,16 @@
 Änderungen an der Website von Andreas Göttl IT Service. Ton, Sie-Anrede und
 Farbwelt (#f5f1e8, Light/Dark) wurden dabei nicht angetastet.
 
+## 2026-11-09 – Kürzere Seite mit sichtbarem Profil
+
+- Gesamtseite auf vier Bereiche gestrafft: Einstieg, Leistungen, persönliche Vorstellung mit Profilverweisen, Kontakt mit FAQ.
+- Große Leistungskarten durch kompakte Bild-/Textzeilen ersetzt; alle fünf Leistungen bleiben enthalten. Das große Einstiegsbild entfällt auf schmalen Displays, die doppelte Kontaktbox und wiederholte Leistungs-Pills entfallen.
+- „Warum ich“ und die zuvor ergänzte große Profilsektion zusammengeführt: echtes Porträt, kurze Arbeitsweise, auffälliger Profilbutton und direkte Links zu Projekten/Blog.
+- Einzugsgebiet in den Kontaktbereich integriert. Kontakt und FAQ stehen am Desktop nebeneinander, mobil Kontakt zuerst. Alle fünf FAQ-Antworten, Preisangabe und Kontaktkanäle erhalten. Fragen durchgehend in Sie-Anrede.
+- Hauptnavigation und früher Profilhinweis führen zum kompakten persönlichen Bereich; Profilverweis auch im Footer. Alte Anker #warum-ich und #einzugsgebiet bleiben erreichbar. Doppelte Abstände bei Sprungnavigation korrigiert.
+- Vorher/Nachher am gleichen lokalen Server-Setup mit geladenen Originalbildern und geschlossenen FAQ: bei 390px ca. 7.965 → 3.535px Seitenhöhe (−56%), bei 1440px ca. 5.241 → 2.252px (−57%). Das sind Layoutmessungen, keine gemessenen Conversion-Steigerungen.
+- Geprüft: 320/390/760/768/1024/1440px in beiden Themes ohne horizontalen Überlauf oder defekte geladene Bilder. Fünf Leistungen, fünf FAQ und drei Profilziele vorhanden. Mobile Navigation, FAQ per Klick/Tastatur, Impressum/Escape, eindeutige IDs und interne Anker geprüft; JavaScript-Syntax gültig. Kein Produktionsdeployment.
+
 ## 2026-07-06
 
 ### SEO & Auffindbarkeit

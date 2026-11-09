@@ -947,3 +947,60 @@ h3 {
     transform: none;
   }
 }
+
+/* Compact service page: four clear sections, readable copy and short routes. */
+.section{padding-block:clamp(36px,5vw,64px)}
+.hero{padding-block:32px 40px}
+.hero-grid{gap:32px}
+.hero h1{max-width:16ch;font-size:clamp(2rem,4vw,2.8rem)}
+.hero-subtitle{max-width:52ch;margin-bottom:14px}
+.hero .trust-badge{margin-top:14px;padding:0;border:0;background:none;font-size:.88rem;line-height:1.6}
+.hero-actions{margin-top:18px}
+.hero-visual{margin:0;overflow:hidden;border-radius:var(--radius);align-self:center}
+.hero-visual img{width:100%;height:clamp(220px,25vw,340px);object-fit:cover}
+.hero-profile-link{display:inline-flex;align-items:center;gap:8px;margin-top:16px;color:var(--color-primary);font-size:.9rem;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+:root[data-theme="dark"] .hero-profile-link{color:var(--color-accent-strong)}
+.section-heading{margin-bottom:24px}
+.service-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.service-card{display:grid;grid-template-columns:80px minmax(0,1fr);align-items:center;gap:16px;margin:0;padding:16px;border:1px solid var(--color-border);border-radius:var(--radius-sm);background:var(--color-surface)}
+.service-card img{width:80px;height:80px;aspect-ratio:1;object-fit:cover;border-radius:8px}
+.service-card__body{padding:0;min-width:0}
+.service-card h3{font-size:1rem;line-height:1.35}
+.service-card p{font-size:.94rem;line-height:1.6}
+.service-card:hover{transform:none;box-shadow:none}
+.compact-about-grid{display:grid;gap:28px}
+.compact-about-person{display:grid;grid-template-columns:80px minmax(0,1fr);gap:16px;align-items:center}
+.compact-about-person>img{width:80px;height:80px;object-fit:cover;border-radius:50%;border:2px solid var(--color-accent)}
+.compact-about-person h2{font-size:clamp(1.5rem,2.5vw,2rem);margin-bottom:8px}
+.compact-about-person .eyebrow{font-size:.72rem;margin-bottom:6px}
+.compact-about-person p{margin-bottom:0;line-height:1.65}
+.compact-about-person>div>p:last-child{font-size:.9rem;color:var(--color-muted)}
+.compact-about-promise{grid-column:1/-1;max-width:58ch}
+.compact-profile{padding:24px;border:1px solid var(--color-border);border-radius:var(--radius);background:var(--color-surface);min-width:0}
+.compact-profile h3{font-size:1.2rem;line-height:1.4}
+.compact-profile>p{max-width:55ch;color:var(--color-muted);margin-bottom:16px}
+.compact-profile-cta{gap:12px;max-width:100%;min-height:44px}
+.compact-profile svg{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.compact-profile-links{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:12px}
+.compact-profile-links a{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:.9rem;font-weight:700;color:var(--color-accent-strong);text-decoration:underline;text-underline-offset:4px}
+.compact-profile a svg{transition:transform 180ms ease-out}
+.contact-grid{display:grid;gap:28px;align-items:start}
+.contact-card{padding:24px}
+.contact-card:hover{transform:none}
+.contact-card h2{font-size:clamp(1.5rem,2.5vw,2rem)}
+.contact-card .contact-area{font-size:.9rem;line-height:1.65}
+.contact-card .price-info{margin-bottom:16px;padding:8px 12px}
+.contact-actions{margin-top:16px}
+.contact-faq{min-width:0;scroll-margin-top:calc(var(--header-height) + 12px)}
+.contact-faq h2{font-size:1.5rem;margin-bottom:18px}
+.contact-faq .faq-item{padding-inline:16px}
+.contact-faq .faq-item summary{padding-block:14px;font-size:.95rem}
+.contact-faq .faq-item p{font-size:.94rem}
+/* The document already reserves header space; avoid adding it a second time. */
+section[id],#warum-ich,#einzugsgebiet,.contact-faq{scroll-margin-top:0}
+@media(min-width:900px){.compact-about-grid,.contact-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px}.compact-about-person{align-content:center}}
+@media(min-width:1100px){.service-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:759px){.hero-visual{display:none}.hero-actions{flex-direction:row}.hero-actions .button{width:auto;flex:1;padding-inline:14px}.service-grid{grid-template-columns:1fr}.service-card{grid-template-columns:68px minmax(0,1fr);gap:14px;padding:14px}.service-card img{width:68px;height:76px}.compact-profile{padding:20px}.contact-card{padding:20px}.hero-grid{gap:0}}
+@media(max-width:360px){.hero-actions{flex-direction:column}.compact-about-person{grid-template-columns:64px minmax(0,1fr);gap:12px}.compact-about-person>img{width:64px;height:64px}.compact-profile-cta{padding-inline:14px}}
+@media(hover:hover) and (pointer:fine){.compact-profile a:hover svg{transform:translateX(3px)}}
+@media(prefers-reduced-motion:reduce){.compact-profile a:hover svg{transform:none}}
