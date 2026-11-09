@@ -104,9 +104,12 @@
   }
 
   // Only optional examples collapse; the complete service overview stays visible.
-  const serviceExamples = document.querySelectorAll('.offer-details');
+  const serviceExamples = document.querySelectorAll('.service-offering');
   serviceExamples.forEach((current) => {
+    const label = current.querySelector('.service-open > span');
+    const closedLabel = label?.textContent;
     current.addEventListener('toggle', () => {
+      if (label) label.textContent = current.open ? 'Schließen' : closedLabel;
       if (current.open) {
         serviceExamples.forEach((other) => {
           if (other !== current) other.open = false;
