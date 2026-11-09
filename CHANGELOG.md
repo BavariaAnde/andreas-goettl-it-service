@@ -3,16 +3,15 @@
 Änderungen an der Website von Andreas Göttl IT Service. Ton, Sie-Anrede und
 Farbwelt (#f5f1e8, Light/Dark) wurden dabei nicht angetastet.
 
-## 2026-11-09 – Persönliches Profil sichtbar einbinden
+## 2026-11-09 – Kürzere Seite mit sichtbarem Profil
 
-- Früher, untergeordneter Profilhinweis im Einstieg: „Lernen Sie mich und meine Projekte kennen“.
-- Hauptnavigation „Über mich“ führt zum neuen Abschnitt #profil.
-- Eigenständiger Bereich „Der Mensch hinter dem IT-Service“ erklärt Kunden den Nutzen der persönlichen Website, mit Hauptverweis zum Profil und Direkteinstiegen ins Vereinsprojekt sowie in den Blog.
-- Aussagekräftigerer Link am bestehenden Porträt und „Profil, Projekte & Blog“ im Footer.
-- Sie-Anrede, bestehende Farbwelt und Kontaktwege erhalten. Keine neuen Marketingzahlen, Referenzen oder Kundenbewertungen ergänzt. Keine eingebetteten Inhalte oder neuen externen Skripte.
-- Responsives Layout, Tastaturfokus, dezente Hover-Bewegung und Reduced-Motion-Alternative; keine zusätzliche JavaScript-Logik erforderlich.
-- Geprüft: sechs Breiten (320, 390, 760, 768, 1024, 1440px) in beiden Themes ohne horizontalen Überlauf oder defekte geladene Bilder; mobile Navigation öffnet/schließt korrekt. Alle drei neuen externen Ziele im Browser aufgerufen und Rückweg geprüft. Interne Anker und eindeutige IDs geprüft, vorhandenes JavaScript syntaktisch gültig.
-- Änderungen im Review-Branch; kein Produktionsdeployment ausgeführt.
+- Gesamtseite auf vier Bereiche gestrafft: Einstieg, Leistungen, persönliche Vorstellung mit Profilverweisen, Kontakt mit FAQ.
+- Große Leistungskarten durch kompakte Bild-/Textzeilen ersetzt; alle fünf Leistungen bleiben enthalten. Das große Einstiegsbild entfällt auf schmalen Displays, die doppelte Kontaktbox und wiederholte Leistungs-Pills entfallen.
+- „Warum ich“ und die zuvor ergänzte große Profilsektion zusammengeführt: echtes Porträt, kurze Arbeitsweise, auffälliger Profilbutton und direkte Links zu Projekten/Blog.
+- Einzugsgebiet in den Kontaktbereich integriert. Kontakt und FAQ stehen am Desktop nebeneinander, mobil Kontakt zuerst. Alle fünf FAQ-Antworten, Preisangabe und Kontaktkanäle erhalten. Fragen durchgehend in Sie-Anrede.
+- Hauptnavigation und früher Profilhinweis führen zum kompakten persönlichen Bereich; Profilverweis auch im Footer. Alte Anker #warum-ich und #einzugsgebiet bleiben erreichbar. Doppelte Abstände bei Sprungnavigation korrigiert.
+- Vorher/Nachher am gleichen lokalen Server-Setup mit geladenen Originalbildern und geschlossenen FAQ: bei 390px ca. 7.965 → 3.535px Seitenhöhe (−56%), bei 1440px ca. 5.241 → 2.252px (−57%). Das sind Layoutmessungen, keine gemessenen Conversion-Steigerungen.
+- Geprüft: 320/390/760/768/1024/1440px in beiden Themes ohne horizontalen Überlauf oder defekte geladene Bilder. Fünf Leistungen, fünf FAQ und drei Profilziele vorhanden. Mobile Navigation, FAQ per Klick/Tastatur, Impressum/Escape, eindeutige IDs und interne Anker geprüft; JavaScript-Syntax gültig. Kein Produktionsdeployment.
 
 ## 2026-07-06
 

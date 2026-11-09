@@ -37,7 +37,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap">
 
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=3">
   <script src="script.js" defer></script>
   <script defer src="https://stats.goettl-oberbubach.de/script.js" data-website-id="122bb7df-1bef-40a8-9d23-cfd5b84f1bcb"></script>
 
@@ -190,11 +190,11 @@
         "@type": "FAQPage",
         "@id": "https://www.andreas-goettl.de/#faq-schema",
         "mainEntity": [
-          {"@type": "Question", "name": "Bei welchen Problemen hilfst du?", "acceptedAnswer": {"@type": "Answer", "text": "Bei WLAN und Router, PC und Windows, Drucker und Scanner, Backup und Datenübernahme, Microsoft 365 und E-Mail sowie Fernwartung – kurz: bei den typischen Alltagsproblemen mit Technik."}},
+          {"@type": "Question", "name": "Bei welchen Problemen helfen Sie?", "acceptedAnswer": {"@type": "Answer", "text": "Bei WLAN und Router, PC und Windows, Drucker und Scanner, Backup und Datenübernahme, Microsoft 365 und E-Mail sowie Fernwartung – kurz: bei den typischen Alltagsproblemen mit Technik."}},
           {"@type": "Question", "name": "Was kostet die Hilfe?", "acceptedAnswer": {"@type": "Answer", "text": "Die erste Einschätzung ist kostenlos. Danach in der Regel 50 € pro Stunde. Aufwand und Kosten werden vorher besprochen, es gibt keine versteckten Kosten."}},
           {"@type": "Question", "name": "Hilfe vor Ort oder per Fernwartung?", "acceptedAnswer": {"@type": "Answer", "text": "Beides. Software- und Windows-Probleme lassen sich oft per Fernwartung lösen, bei WLAN, Netzwerk, Druckern oder neuer Hardware ist meist ein Termin vor Ort sinnvoll."}},
           {"@type": "Question", "name": "Wie schnell bekomme ich eine Rückmeldung?", "acceptedAnswer": {"@type": "Answer", "text": "Meist innerhalb weniger Stunden, abhängig von Terminlage und Dringlichkeit."}},
-          {"@type": "Question", "name": "Wird auch Senioren am Computer geholfen?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, gerne. Die Hilfe wird ruhig und ohne Fachchinesisch erklärt, damit Computer, Smartphone und Internet sicher genutzt werden können."}}
+          {"@type": "Question", "name": "Helfen Sie auch Senioren am Computer?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, gerne. Die Hilfe wird ruhig und ohne Fachchinesisch erklärt, damit Computer, Smartphone und Internet sicher genutzt werden können."}}
         ]
       }
     ]
@@ -244,10 +244,10 @@
       <div class="container hero-grid">
         <div class="hero-copy reveal">
           <p class="eyebrow">IT-Service aus Roßbach</p>
-          <h1 id="hero-title">Ich helfe Ihnen, wenn Technik nicht mehr funktioniert.</h1>
-          <p class="hero-subtitle">Ich helfe Privatkunden, Senioren, Familien und kleinen Unternehmen – verständlich erklärt und ohne unnötigen Aufwand.</p>
+          <h1 id="hero-title">Persönliche IT-Hilfe in Roßbach.</h1>
+          <p class="hero-subtitle">Bei WLAN-, PC- und Druckerproblemen – für Privatkunden, Senioren, Familien und kleine Unternehmen.</p>
 
-          <p class="trust-badge">✓ Kostenlose Erstberatung – Kosten werden vorab klar besprochen</p>
+          <p class="trust-badge">Erste Einschätzung kostenlos · Kosten vorab besprochen</p>
 
           <div class="hero-actions" aria-label="Kontaktmöglichkeiten">
             <a class="button button-primary" href="tel:+4915563242815">Jetzt anrufen</a>
@@ -256,21 +256,11 @@
 
           <a class="hero-profile-link" href="#profil">Lernen Sie mich und meine Projekte kennen <span aria-hidden="true">→</span></a>
 
-          <ul class="hero-points" aria-label="Typische Hilfebereiche">
-            <li>WLAN, Router und Internet</li>
-            <li>PC, Windows und Drucker</li>
-            <li>Fernwartung und Hilfe vor Ort</li>
-          </ul>
-        </div>
+</div>
 
-        <div class="hero-card reveal" style="--reveal-delay: 120ms;">
+        <figure class="hero-visual">
           <img src="assets/hero.webp" width="1400" height="1003" alt="IT-Hilfe am Laptop mit Router und Notizen">
-          <div class="hero-card__body">
-            <h2>Einfach anrufen oder schreiben.</h2>
-            <p>Beschreiben Sie kurz das Problem – ich sage Ihnen direkt, ob und wie ich helfen kann.</p>
-            <a class="text-link" href="mailto:kontakt@andreas-goettl.de">kontakt@andreas-goettl.de</a>
-          </div>
-        </div>
+        </figure>
       </div>
     </section>
 
@@ -278,7 +268,7 @@
       <div class="container">
         <div class="section-heading reveal">
           <p class="eyebrow">Leistungen</p>
-          <h2 id="services-title">Die Dinge, bei denen ich oft schnell helfen kann.</h2>
+          <h2 id="services-title">Wobei ich Ihnen helfen kann.</h2>
         </div>
 
         <div class="service-grid">
@@ -325,135 +315,32 @@
       </div>
     </section>
 
-    <section class="section section-soft" id="warum-ich" aria-labelledby="why-title">
-      <div class="container why-grid">
-        <div class="reveal">
-          <p class="eyebrow">Warum ich</p>
-          <h2 id="why-title">Ruhig arbeiten und ehrlich sagen, was Sache ist.</h2>
-
-          <div class="profile-card">
-            <img src="assets/me.webp" width="120" height="120" alt="Andreas Göttl" loading="lazy">
-            <div>
-              <strong>Andreas Göttl</strong>
-              <p>Fachinformatiker für Systemintegration aus Niederbayern.</p>
-              <a class="text-link profile-card__link" href="https://profil.andreas-goettl.de/" rel="noopener">Mehr über mich und meine Projekte →</a>
-            </div>
-          </div>
+    <section class="section section-soft compact-about" id="profil" aria-labelledby="profile-title">
+      <div class="container compact-about-grid">
+        <div class="compact-about-person" id="warum-ich">
+          <img src="assets/me.webp" width="120" height="120" alt="Andreas Göttl" loading="lazy">
+          <div><p class="eyebrow">Ihr Ansprechpartner</p><h2 id="profile-title">Andreas Göttl.</h2><p>Fachinformatiker für Systemintegration aus Niederbayern.</p></div>
+          <p class="compact-about-promise">Ich erkläre Ihnen das Problem und bespreche die Kosten, bevor ich loslege. Verständlich und ohne unnötige Zusatzverkäufe.</p>
         </div>
-
-        <div class="trust-block reveal" style="--reveal-delay: 120ms;">
-          <p>Ich erkläre, woran es liegt und was es kostet, bevor etwas gemacht wird. Keine unnötigen Zusatzverkäufe, keine Fachbegriffe, die niemand braucht – auch nicht, wenn es um Technik geht, mit der Sie sich sonst nicht beschäftigen.</p>
-
-          <div class="process-list" aria-label="So läuft es ab">
-            <article class="process-item">
-              <strong>Sie schildern mir das Problem</strong>
-              <p>Am Telefon, per WhatsApp oder E-Mail – kurz beschreiben reicht.</p>
-            </article>
-            <article class="process-item">
-              <strong>Ich sage Ihnen, ob und wie ich helfen kann</strong>
-              <p>Und was es ungefähr kostet, bevor irgendetwas passiert.</p>
-            </article>
-            <article class="process-item">
-              <strong>Dann kümmere ich mich darum</strong>
-              <p>Vor Ort oder per Fernwartung – je nachdem, was schneller geht.</p>
-            </article>
+        <div class="compact-profile">
+          <h3>Mehr als Hilfe am PC.</h3>
+          <p>Auf meiner persönlichen Website lernen Sie meinen Weg in die IT, eigene Projekte und meine Arbeitsweise kennen.</p>
+          <a class="button button-primary compact-profile-cta" href="https://profil.andreas-goettl.de/">Mein Profil entdecken <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+          <div class="compact-profile-links">
+            <a href="https://profil.andreas-goettl.de/#vereinsorganisation">Eigene Projekte <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+            <a href="https://profil.andreas-goettl.de/blog/">Blog lesen <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="section profile-section" id="profil" aria-labelledby="profile-title">
-      <div class="container profile-bridge">
-        <div class="profile-bridge__intro">
-          <p class="eyebrow">Mehr über Andreas Göttl</p>
-          <h2 id="profile-title">Der Mensch hinter dem IT-Service.</h2>
-          <p>Sie möchten mich erst etwas besser kennenlernen? Auf meiner persönlichen Website zeige ich meinen Weg in die IT, eigene Projekte und was mich beim Lernen und Arbeiten beschäftigt.</p>
-          <p>So bekommen Sie einen Eindruck davon, wie ich an Aufgaben herangehe – auch über die schnelle Hilfe am PC hinaus.</p>
-          <a class="button button-primary profile-bridge__cta" href="https://profil.andreas-goettl.de/">Mein Profil entdecken <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-          <p class="profile-bridge__destination">Meine persönliche Website · profil.andreas-goettl.de</p>
-        </div>
-        <div class="profile-bridge__paths">
-          <a class="profile-path" href="https://profil.andreas-goettl.de/#vereinsorganisation">
-            <span class="profile-path__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="3" y="4" width="18" height="15" rx="2"/><path d="M3 9h18m-13 4h3m-3 3h7"/></svg></span>
-            <div class="profile-path__copy"><span class="profile-path__type">Eigene Projekte</span><h3>Wenn aus einer Idee etwas Nützliches wird.</h3><span>Zum Beispiel ein Bestellsystem für die DJK Thanndorf: entstanden aus einer Aufgabe in meinem eigenen Vereinsalltag.</span><span class="profile-path__action">Das Vereinsprojekt ansehen <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span></div>
-          </a>
-          <a class="profile-path" href="https://profil.andreas-goettl.de/blog/">
-            <span class="profile-path__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="m14 4 6 6M4 20l5-1L21 7a2 2 0 0 0-4-4L5 15l-1 5Zm9 0h8"/></svg></span>
-            <div class="profile-path__copy"><span class="profile-path__type">Persönliche Einblicke</span><h3>Was ich aus IT, Studium und Projekten mitnehme.</h3><span>Im Blog schreibe ich über Erfahrungen, die Arbeit mit KI und darüber, was gelingt – und was ich noch lernen möchte.</span><span class="profile-path__action">Im Blog weiterlesen <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span></div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="einzugsgebiet" aria-labelledby="area-title">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Einzugsgebiet</p>
-          <h2 id="area-title">Vor Ort in Roßbach und der Umgebung.</h2>
-          <p>Neben Roßbach bin ich auch in den Nachbargemeinden wie Arnstorf, Eggenfelden, Pfarrkirchen und Simbach am Inn vor Ort unterwegs, wenn ein Termin sinnvoller ist als Fernwartung. Einfach kurz melden – ich sage Ihnen, ob und wann ein Besuch passt.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="faq" aria-labelledby="faq-title">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Häufige Fragen</p>
-          <h2 id="faq-title">Kurze Antworten auf die häufigsten Fragen.</h2>
-        </div>
-
-        <div class="faq-list reveal" style="--reveal-delay: 80ms;">
-          <details class="faq-item">
-            <summary>Bei welchen Problemen hilfst du?</summary>
-            <p>Bei WLAN und Router, PC und Windows, Drucker und Scanner, Backup und Datenübernahme, Microsoft 365 und E-Mail sowie Fernwartung – kurz: bei den typischen Alltagsproblemen mit Technik.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Was kostet die Hilfe?</summary>
-            <p>Die erste Einschätzung ist kostenlos. Danach in der Regel 50&nbsp;€ pro Stunde. Aufwand und Kosten werden vorher besprochen, es gibt keine versteckten Kosten.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Hilfe vor Ort oder per Fernwartung?</summary>
-            <p>Beides. Software- und Windows-Probleme lassen sich oft per Fernwartung lösen, bei WLAN, Netzwerk, Druckern oder neuer Hardware ist meist ein Termin vor Ort sinnvoll.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Wie schnell bekomme ich eine Rückmeldung?</summary>
-            <p>Meist innerhalb weniger Stunden, abhängig von Terminlage und Dringlichkeit.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Wird auch Senioren am Computer geholfen?</summary>
-            <p>Ja, gerne. Die Hilfe wird ruhig und ohne Fachchinesisch erklärt, damit Computer, Smartphone und Internet sicher genutzt werden können.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!--
-      Kundenstimmen: aktivieren, sobald erste echte Bewertungen vorliegen.
-      Bis dahin bewusst deaktiviert lassen (keine erfundenen Testimonials).
-
-      <section class="section section-soft" id="kundenstimmen" aria-labelledby="testimonials-title">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Kundenstimmen</p>
-            <h2 id="testimonials-title">Was Kunden sagen.</h2>
-          </div>
-
-          <div class="testimonial-grid">
-            <article class="testimonial-card reveal">
-              <p>„Zitat einer Kundin oder eines Kunden.“</p>
-              <strong>Name, Ort</strong>
-            </article>
-          </div>
-        </div>
-      </section>
-    -->
 
     <section class="section contact-section" id="kontakt" aria-labelledby="contact-title">
-      <div class="container">
-        <div class="contact-card reveal">
+      <div class="container contact-grid">
+        <div class="contact-card">
           <p class="eyebrow">Kontakt</p>
-          <h2 id="contact-title">Wenn es jetzt weitergehen soll, rufen Sie einfach an.</h2>
+          <h2 id="contact-title">Schildern Sie mir kurz Ihr Problem.</h2>
           <p>Oder schreiben Sie kurz per WhatsApp oder E-Mail, was los ist – was Ihnen lieber ist.</p>
+          <p class="contact-area" id="einzugsgebiet">Vor Ort in Roßbach und Umgebung, unter anderem in Arnstorf, Eggenfelden, Pfarrkirchen und Simbach am Inn. Vieles lässt sich auch per Fernwartung lösen.</p>
           <p class="price-info">Transparente Abrechnung nach Aufwand – in der Regel 50&nbsp;€ pro Stunde. Die erste Einschätzung ist kostenlos.</p>
 
           <div class="contact-actions">
@@ -480,6 +367,32 @@
             </li>
           </ul>
         </div>
+        <div class="contact-faq" id="faq" aria-labelledby="faq-title">
+          <p class="eyebrow">Gut zu wissen</p>
+          <h2 id="faq-title">Häufige Fragen.</h2>
+          <div class="faq-list">
+          <details class="faq-item">
+            <summary>Bei welchen Problemen helfen Sie?</summary>
+            <p>Bei WLAN und Router, PC und Windows, Drucker und Scanner, Backup und Datenübernahme, Microsoft 365 und E-Mail sowie Fernwartung – kurz: bei den typischen Alltagsproblemen mit Technik.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Was kostet die Hilfe?</summary>
+            <p>Die erste Einschätzung ist kostenlos. Danach in der Regel 50&nbsp;€ pro Stunde. Aufwand und Kosten werden vorher besprochen, es gibt keine versteckten Kosten.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Hilfe vor Ort oder per Fernwartung?</summary>
+            <p>Beides. Software- und Windows-Probleme lassen sich oft per Fernwartung lösen, bei WLAN, Netzwerk, Druckern oder neuer Hardware ist meist ein Termin vor Ort sinnvoll.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Wie schnell bekomme ich eine Rückmeldung?</summary>
+            <p>Meist innerhalb weniger Stunden, abhängig von Terminlage und Dringlichkeit.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Helfen Sie auch Senioren am Computer?</summary>
+            <p>Ja, gerne. Die Hilfe wird ruhig und ohne Fachchinesisch erklärt, damit Computer, Smartphone und Internet sicher genutzt werden können.</p>
+          </details>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -489,7 +402,7 @@
       <p>© <span data-year></span> Andreas Göttl IT Service</p>
       <nav aria-label="Footer Navigation">
         <a href="#leistungen">Leistungen</a>
-        <a href="#warum-ich">Warum ich</a>
+        <a href="#profil">Über mich</a>
         <a href="#faq">FAQ</a>
         <a href="#kontakt">Kontakt</a>
         <a href="https://profil.andreas-goettl.de/" rel="noopener">Profil, Projekte &amp; Blog</a>
