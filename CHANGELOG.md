@@ -3,6 +3,14 @@
 Änderungen an der Website von Andreas Göttl IT Service. Ton, Sie-Anrede und
 Farbwelt (#f5f1e8, Light/Dark) wurden dabei nicht angetastet.
 
+## 2026-11-09 – Drei sichtbare Leistungsbereiche
+
+- Computer & Alltag, IT für kleine Betriebe sowie Websites & digitale Lösungen als drei gleichwertige Angebote. Bisherige Alltagshilfe bleibt enthalten; Websites, Formulare, Anmeldungen und kleine Webanwendungen werden aktiv angeboten.
+- Sofort sichtbare Leistungszeilen, optional aufklappbare Kundenanliegen mit Kontaktlink. Native Details/Summary per Tastatur bedienbar, maximal ein Beispielbereich offen; Leistungen bleiben immer sichtbar.
+- Echte Hofaufnahme in der Webkarte, Vereinsorganisations-Ansicht im Beispielbereich. Bildherkunft: docs/media/service-offer.md. Vorhandene Fotos in den anderen Bereichen weiterverwendet.
+- Einstieg, Kontakttexte, Metadaten sowie Service-/FAQ-JSON-LD angepasst. 50 €/Stunde bleiben sichtbar; größere Projekte mit vorab abgestimmtem Aufwand und Budget.
+- Geprüft bei 320/390/760/999/1024/1440px in Light/Dark: drei Angebote, kein horizontaler Überlauf, keine defekten geladenen Bilder. Beispiele per Klick und Enter, exklusives Öffnen, Anfrageanker, mobile Navigation und Preis-FAQ geprüft. JavaScript-Syntax, IDs, interne Anker und JSON-LD/FAQ-Übereinstimmung gültig. Kein Produktionsdeployment.
+
 ## 2026-11-09 – Kürzere Seite mit sichtbarem Profil
 
 - Gesamtseite auf vier Bereiche gestrafft: Einstieg, Leistungen, persönliche Vorstellung mit Profilverweisen, Kontakt mit FAQ.

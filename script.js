@@ -103,6 +103,18 @@
     }
   }
 
+  // Only optional examples collapse; the complete service overview stays visible.
+  const serviceExamples = document.querySelectorAll('.offer-details');
+  serviceExamples.forEach((current) => {
+    current.addEventListener('toggle', () => {
+      if (current.open) {
+        serviceExamples.forEach((other) => {
+          if (other !== current) other.open = false;
+        });
+      }
+    });
+  });
+
   // Modal functionality
   const modalOpenButtons = document.querySelectorAll('[data-modal-open]');
   const modalCloseElements = document.querySelectorAll('[data-modal-close]');
