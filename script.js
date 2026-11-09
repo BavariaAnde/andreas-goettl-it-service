@@ -9,7 +9,11 @@
 
   const applyTheme = (theme) => {
     root.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
+    try {
+      localStorage.setItem('theme', theme);
+    } catch {
+      // Theme changes remain usable when browser storage is unavailable.
+    }
 
     if (metaThemeColor) {
       metaThemeColor.setAttribute('content', theme === 'dark' ? '#0f3433' : '#f5f1e8');
@@ -25,7 +29,12 @@
     }
   };
 
-  const storedTheme = localStorage.getItem('theme');
+  let storedTheme = null;
+  try {
+    storedTheme = localStorage.getItem('theme');
+  } catch {
+    // Continue initialization with the default theme.
+  }
   if (storedTheme === 'light' || storedTheme === 'dark') {
     applyTheme(storedTheme);
   } else {

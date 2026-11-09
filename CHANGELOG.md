@@ -3,6 +3,14 @@
 Änderungen an der Website von Andreas Göttl IT Service. Ton, Sie-Anrede und
 Farbwelt (#f5f1e8, Light/Dark) wurden dabei nicht angetastet.
 
+## 2026-11-09 – CRO-Quick-Wins und kompakte Suchdarstellung
+
+- Preis und kostenlose Ersteinschätzung direkt im Einstieg. Kontakttext senkt die Einstiegshürde auf einen Satz; Profiltext und CTA zeigen den Nutzen echter Arbeitsproben. Senioren-FAQ verständlicher formuliert und identisch im JSON-LD aktualisiert.
+- Alle drei WhatsApp-Links öffnen dieselbe vorbereitete, frei bearbeitbare Einleitung. Kein automatischer Nachrichtenversand.
+- localStorage-Zugriffe abgesichert, damit Theme, Navigation und Scroll-Reveal auch ohne verfügbaren Browserspeicher initialisieren.
+- Knapper Seitentitel und Meta-/Social-Beschreibungen zum sichtbaren Angebot; sachliche Kenntnisse statt Kombinationen aus Suchbegriffen und Orten im JSON-LD. Canonical und index/follow erhalten. Sitemap-Datum aktualisiert, weiterhin genau eine URL. Keine zusätzlichen Landingpages, Abschnitte oder SEO-Textblöcke.
+- Zwölf responsive Zustände, Kontaktweg und Senioren-FAQ geprüft. Speicherfehlerfälle sowie HTML/JSON-LD, FAQ, WhatsApp-Vorlagen und Sitemap validiert. Kritische Selbstbewertung und Messgrenzen in docs/cro-review.md dokumentiert; mehr Kunden oder bessere Rankings sind noch nicht nachgewiesen.
+
 ## 2026-11-09 – Kundentexte und Textfluss geschärft
 
 - Einstieg konkretisiert: Computerhilfe und Websites aus Roßbach, mit verständlichen Beispielen für Privatkunden, Betriebe und Vereine. Allgemeine Nutzensätze durch konkrete Anliegen und Tätigkeiten ersetzt.
