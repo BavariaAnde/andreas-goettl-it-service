@@ -31,14 +31,14 @@
   <link rel="icon" href="assets/favicon-192.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="preload" as="image" href="assets/me.webp">
+  <link rel="preload" as="image" href="assets/hero.webp" imagesrcset="assets/hero.webp">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap">
 
-  <link rel="stylesheet" href="styles.css?v=5">
-  <script src="script.js?v=3" defer></script>
+  <link rel="stylesheet" href="styles.css?v=4">
+  <script src="script.js?v=2" defer></script>
   <script defer src="https://stats.goettl-oberbubach.de/script.js" data-website-id="122bb7df-1bef-40a8-9d23-cfd5b84f1bcb"></script>
 
   <script>
@@ -266,8 +266,7 @@
 </div>
 
         <figure class="hero-visual">
-          <img src="assets/me.webp" width="320" height="320" alt="Andreas Göttl">
-          <figcaption><span>Ihr direkter Ansprechpartner</span><strong>Andreas Göttl</strong><span>Fachinformatiker für Systemintegration aus Niederbayern.</span></figcaption>
+          <img src="assets/hero.webp" width="1400" height="1003" alt="IT-Hilfe am Laptop mit Router und Notizen">
         </figure>
       </div>
     </section>
@@ -276,41 +275,53 @@
       <div class="container">
         <div class="section-heading reveal">
           <p class="eyebrow">Leistungen</p>
-          <h2 id="services-title">Was brauchen Sie?</h2>
+          <h2 id="services-title">Technik, die Ihnen den Alltag leichter macht.</h2>
         </div>
 
-        <div class="service-overview">
-          <details class="service-offering" name="service-examples" id="angebot-everyday">
-            <summary aria-label="Computer &amp; Alltag: Leistungen und Beispiele">
-              <span class="service-art"><img src="assets/service-everyday.svg" width="320" height="190" alt="" loading="lazy"></span>
-              <span class="service-copy"><span class="service-index" aria-hidden="true">01</span><span class="service-name">Computer &amp; Alltag</span><span class="service-benefit">Hilfe, damit Ihre Technik funktioniert.</span><span class="service-capabilities"><span>PC, Laptop &amp; Windows</span><span>WLAN, Drucker &amp; Geräte</span><span>Smartphone &amp; Datensicherung</span></span></span>
-              <span class="service-open"><span>Beispiele</span><svg class="service-expand" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span>
-            </summary>
-            <div class="service-examples">
-              <div class="service-example-copy"><p class="service-example-label">Zum Beispiel</p><ul><li>„Mein Laptop ist langsam.“</li><li>„Das WLAN reicht nicht überall.“</li><li>„Ich brauche Hilfe mit meinem neuen Handy.“</li></ul><a class="offer-inquiry" href="#kontakt">Computerhilfe anfragen <span aria-hidden="true">→</span></a></div>
+        <div class="offer-grid">
+          <article class="offer-card" aria-labelledby="everyday-title">
+            <div class="offer-media"><img src="assets/router.webp" width="900" height="600" alt="Ein Netzwerkkabel wird am Router angeschlossen" loading="lazy"></div>
+            <div class="offer-body">
+              <h3 id="everyday-title">Computer &amp; Alltag</h3>
+              <p class="offer-benefit">Hilfe, damit Ihre Technik funktioniert.</p>
+              <ul class="offer-services"><li>PC, Laptop &amp; Windows</li><li>WLAN, Drucker &amp; Geräte</li><li>Smartphone &amp; Datensicherung</li></ul>
+              <details class="offer-details" name="service-examples">
+                <summary>Typische Beispiele<span class="visually-hidden"> für Computer und Alltag</span></summary>
+                <ul><li>„Mein Laptop ist langsam.“</li><li>„Das WLAN reicht nicht überall.“</li><li>„Ich brauche Hilfe mit meinem neuen Handy.“</li></ul>
+                <a class="offer-inquiry" href="#kontakt">Computerhilfe anfragen <span aria-hidden="true">→</span></a>
+              </details>
             </div>
-          </details>
-          <details class="service-offering" name="service-examples" id="angebot-business">
-            <summary aria-label="IT für kleine Betriebe: Leistungen und Beispiele">
-              <span class="service-art"><img src="assets/service-business.svg" width="320" height="190" alt="" loading="lazy"></span>
-              <span class="service-copy"><span class="service-index" aria-hidden="true">02</span><span class="service-name">IT für kleine Betriebe</span><span class="service-benefit">Praktische IT für Ihren Arbeitsalltag.</span><span class="service-capabilities"><span>Arbeitsplätze &amp; Netzwerk</span><span>Geschäftliche E-Mail</span><span>Backup &amp; Datenübernahme</span></span></span>
-              <span class="service-open"><span>Beispiele</span><svg class="service-expand" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span>
-            </summary>
-            <div class="service-examples">
-              <div class="service-example-copy"><p class="service-example-label">Zum Beispiel</p><ul><li>„Wir richten einen Arbeitsplatz ein.“</li><li>„Wir möchten unsere Dateien zuverlässig sichern.“</li><li>„Wir brauchen geschäftliche E-Mail-Adressen.“</li></ul><a class="offer-inquiry" href="#kontakt">IT-Unterstützung anfragen <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="offer-card" aria-labelledby="business-title">
+            <div class="offer-media"><img src="assets/data-transfer.webp" width="900" height="600" alt="Ein externes Laufwerk wird zur Datensicherung an einen Laptop angeschlossen" loading="lazy"></div>
+            <div class="offer-body">
+              <h3 id="business-title">IT für kleine Betriebe</h3>
+              <p class="offer-benefit">Praktische IT für Ihren Arbeitsalltag.</p>
+              <ul class="offer-services"><li>Arbeitsplätze &amp; Netzwerk</li><li>Geschäftliche E-Mail</li><li>Backup &amp; Datenübernahme</li></ul>
+              <details class="offer-details" name="service-examples">
+                <summary>Typische Beispiele<span class="visually-hidden"> für kleine Betriebe</span></summary>
+                <ul><li>„Wir richten einen Arbeitsplatz ein.“</li><li>„Wir möchten unsere Dateien zuverlässig sichern.“</li><li>„Wir brauchen geschäftliche E-Mail-Adressen.“</li></ul>
+                <a class="offer-inquiry" href="#kontakt">IT-Unterstützung anfragen <span aria-hidden="true">→</span></a>
+              </details>
             </div>
-          </details>
-          <details class="service-offering" name="service-examples" id="angebot-web">
-            <summary aria-label="Websites &amp; digitale Lösungen: Leistungen und Beispiele">
-              <span class="service-art service-art--web"><img src="assets/goettl-hof-preview.webp" width="1265" height="712" alt="" loading="lazy"><span>Eigene Arbeit · Göttl Hof</span></span>
-              <span class="service-copy"><span class="service-index" aria-hidden="true">03</span><span class="service-name">Websites &amp; digitale Lösungen</span><span class="service-benefit">Ihre eigene Website. Einfachere Abläufe.</span><span class="service-capabilities"><span>Firmen- &amp; Vereinswebsites</span><span>Formulare &amp; Anmeldungen</span><span>Bestellungen &amp; kleine Webanwendungen</span></span></span>
-              <span class="service-open"><span>Beispiele &amp; Arbeiten</span><svg class="service-expand" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span>
-            </summary>
-            <div class="service-examples">
-              <div class="service-example-copy"><p class="service-example-label">Zum Beispiel</p><ul><li>„Mein Betrieb braucht eine Website.“</li><li>„Anmeldungen kommen bisher per WhatsApp.“</li><li>„Bestellungen sollen einfacher werden.“</li></ul><a class="offer-inquiry" href="#kontakt">Website oder Lösung anfragen <span aria-hidden="true">→</span></a></div>
-              <div class="service-work"><a href="https://profil.andreas-goettl.de/#goettl-hof"><img src="assets/goettl-hof-preview.webp" width="1265" height="712" alt="Echte Ansicht meiner Website für Göttl Hof" loading="lazy"><span>Website: Göttl Hof <span aria-hidden="true">↗</span></span></a><a href="https://profil.andreas-goettl.de/#vereinsorganisation"><img src="assets/verein-start.webp" width="1265" height="712" alt="Echte Ansicht der digitalen Essensbestellung mit Beispieldaten" loading="lazy"><span>Web-App: Vereinsorganisation <span aria-hidden="true">↗</span></span></a></div>
+          </article>
+          <article class="offer-card" aria-labelledby="web-title">
+            <a class="offer-media offer-media--projects" href="https://profil.andreas-goettl.de/#goettl-hof" aria-label="Website Göttl Hof: mein Projekt ansehen">
+              <img src="assets/goettl-hof-preview.webp" width="1265" height="712" alt="Meine Website für Göttl Hof" loading="lazy">
+              <span>Eigene Arbeit: Göttl Hof <span aria-hidden="true">↗</span></span>
+            </a>
+            <div class="offer-body">
+              <h3 id="web-title">Websites &amp; digitale Lösungen</h3>
+              <p class="offer-benefit">Ihre eigene Website. Einfachere Abläufe.</p>
+              <ul class="offer-services"><li>Firmen- &amp; Vereinswebsites</li><li>Formulare &amp; Anmeldungen</li><li>Bestellungen &amp; kleine Webanwendungen</li></ul>
+              <details class="offer-details" name="service-examples">
+                <summary>Typische Beispiele<span class="visually-hidden"> für Websites und digitale Lösungen</span></summary>
+                <ul><li>„Mein Betrieb braucht eine Website.“</li><li>„Anmeldungen kommen bisher per WhatsApp.“</li><li>„Bestellungen sollen einfacher werden.“</li></ul>
+                <a class="offer-project" href="https://profil.andreas-goettl.de/#vereinsorganisation"><img src="assets/verein-start.webp" width="1265" height="712" alt="Essensbestellung der Vereinsorganisation mit Beispieldaten" loading="lazy"><span>Aus meiner Praxis: digitale Vereinsorganisation <span aria-hidden="true">↗</span></span></a>
+                <a class="offer-inquiry" href="#kontakt">Website oder Lösung anfragen <span aria-hidden="true">→</span></a>
+              </details>
             </div>
-          </details>
+          </article>
         </div>
         <div class="offer-price">
           <p><strong>50 € pro Stunde.</strong> Klar und vorher besprochen.<br><span>Erste Einschätzung kostenlos. Bei größeren Projekten stimmen wir Aufwand und Budget vorab ab.</span></p>

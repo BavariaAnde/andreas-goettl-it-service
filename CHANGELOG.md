@@ -3,13 +3,11 @@
 Änderungen an der Website von Andreas Göttl IT Service. Ton, Sie-Anrede und
 Farbwelt (#f5f1e8, Light/Dark) wurden dabei nicht angetastet.
 
-## 2026-11-09 – Bildsprache und Leistungsübersicht überarbeitet
+## 2026-11-09 – Fotogestaltung wiederhergestellt
 
-- Die gleichförmigen Fotokarten durch drei kompakte Leistungszeilen ersetzt. Alle neun Leistungszeilen bleiben sichtbar; die gesamte Angebotszeile öffnet per Klick oder Tastatur passende Beispiele und einen Kontaktlink.
-- Wiederholtes Laptopfoto und generische Stockmotive aus den Leistungsbereichen entfernt. Zwei eigene SVG-Illustrationen erklären Alltagshilfe und Betriebs-IT. Die echte Hofansicht zeigt die eigene Webarbeit; im aufgeklappten Webbereich stehen Hofwebsite und Vereinsorganisation als vollständige Ansichten mit Projektlinks.
-- Im Desktop-Einstieg echtes Porträt statt allgemeinem Laptopfoto. Mobil bleibt das Porträt im persönlichen Bereich; pro Bildschirmgröße genau eine sichtbare Verwendung. Bildquellen und illustrative Bedeutung dokumentiert.
-- Alte Karten-CSS durch Regeln für die neue Darstellung ersetzt. Kein neuer Bilddienst, keine Bibliothek. Native Details/Summary bleiben auch ohne JavaScript bedienbar; Schließbeschriftung und Pfeil zeigen den aktuellen Zustand.
-- Geprüft bei 320/390/760/999/1024/1440px in beiden Themes: kein horizontaler Überlauf, drei Angebote und neun sichtbare Leistungsangaben, genau ein sichtbares Porträt, keine defekten geladenen Bilder. Klick/Enter und exklusives Öffnen geprüft; JavaScript und JSON-LD gültig. 50 €/Stunde bleiben unverändert.
+- Letzte Änderung an Layout und Bildsprache zurückgenommen: ursprüngliche drei Leistungskarten mit Fotos wiederhergestellt, SVG-Illustrationen entfernt, ursprünglicher Einstieg und persönlicher Bereich wiederhergestellt.
+- Bei Betriebs-IT vorhandenes echtes Foto einer externen Datensicherung eingesetzt, damit sich das Einstiegsbild nicht wiederholt. Keine neuen Bilder erzeugt.
+- Bildpräferenz dokumentiert: echte Fotos und Projektaufnahmen, keine KI-Bilder oder künstlichen Ersatzillustrationen.
 
 ## 2026-11-09 – Drei sichtbare Leistungsbereiche
 
