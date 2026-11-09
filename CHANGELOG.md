@@ -3,6 +3,36 @@
 Änderungen an der Website von Andreas Göttl IT Service. Ton, Sie-Anrede und
 Farbwelt (#f5f1e8, Light/Dark) wurden dabei nicht angetastet.
 
+## 2026-11-09 – CRO-Quick-Wins und kompakte Suchdarstellung
+
+- Preis und kostenlose Ersteinschätzung direkt im Einstieg. Kontakttext senkt die Einstiegshürde auf einen Satz; Profiltext und CTA zeigen den Nutzen echter Arbeitsproben. Senioren-FAQ verständlicher formuliert und identisch im JSON-LD aktualisiert.
+- Alle drei WhatsApp-Links öffnen dieselbe vorbereitete, frei bearbeitbare Einleitung. Kein automatischer Nachrichtenversand.
+- localStorage-Zugriffe abgesichert, damit Theme, Navigation und Scroll-Reveal auch ohne verfügbaren Browserspeicher initialisieren.
+- Knapper Seitentitel und Meta-/Social-Beschreibungen zum sichtbaren Angebot; sachliche Kenntnisse statt Kombinationen aus Suchbegriffen und Orten im JSON-LD. Canonical und index/follow erhalten. Sitemap-Datum aktualisiert, weiterhin genau eine URL. Keine zusätzlichen Landingpages, Abschnitte oder SEO-Textblöcke.
+- Zwölf responsive Zustände, Kontaktweg und Senioren-FAQ geprüft. Speicherfehlerfälle sowie HTML/JSON-LD, FAQ, WhatsApp-Vorlagen und Sitemap validiert. Kritische Selbstbewertung und Messgrenzen in docs/cro-review.md dokumentiert; mehr Kunden oder bessere Rankings sind noch nicht nachgewiesen.
+
+## 2026-11-09 – Kundentexte und Textfluss geschärft
+
+- Einstieg konkretisiert: Computerhilfe und Websites aus Roßbach, mit verständlichen Beispielen für Privatkunden, Betriebe und Vereine. Allgemeine Nutzensätze durch konkrete Anliegen und Tätigkeiten ersetzt.
+- Kurze Kartenüberschriften und Leistungszeilen ohne unnötig lange Sammelbegriffe. Profilverweis nennt echte Arbeitsbeispiele; Kontakt beschreibt den nächsten Schritt.
+- Erzwungene Umbrüche aus Hauptüberschrift und Preiszeile entfernt. Reservierte Leerzeilen unter Kartentiteln und Nutzensätzen entfernt; mobile Vorschaubilder lassen den Text natürlich umfließen statt durch fest reservierte Überschriftenbreiten zusätzliche Umbrüche zu erzeugen.
+- Vorhandene Fotos, Projektaufnahmen und 50 €/Stunde erhalten.
+- Geprüft: 320/390/760/999/1024/1440px in Light und Dark, keine erzwungenen Umbrüche im Hauptinhalt, drei Angebote und neun Leistungen, keine defekten geladenen Bilder oder horizontaler Überlauf. Kartenüberschriften ab 390px in einer Zeile; auf 320px darf die Web-Überschrift natürlich umbrechen.
+
+## 2026-11-09 – Fotogestaltung wiederhergestellt
+
+- Letzte Änderung an Layout und Bildsprache zurückgenommen: ursprüngliche drei Leistungskarten mit Fotos wiederhergestellt, SVG-Illustrationen entfernt, ursprünglicher Einstieg und persönlicher Bereich wiederhergestellt.
+- Bei Betriebs-IT vorhandenes echtes Foto einer externen Datensicherung eingesetzt, damit sich das Einstiegsbild nicht wiederholt. Keine neuen Bilder erzeugt.
+- Bildpräferenz dokumentiert: echte Fotos und Projektaufnahmen, keine KI-Bilder oder künstlichen Ersatzillustrationen.
+
+## 2026-11-09 – Drei sichtbare Leistungsbereiche
+
+- Computer & Alltag, IT für kleine Betriebe sowie Websites & digitale Lösungen als drei gleichwertige Angebote. Bisherige Alltagshilfe bleibt enthalten; Websites, Formulare, Anmeldungen und kleine Webanwendungen werden aktiv angeboten.
+- Sofort sichtbare Leistungszeilen, optional aufklappbare Kundenanliegen mit Kontaktlink. Native Details/Summary per Tastatur bedienbar, maximal ein Beispielbereich offen; Leistungen bleiben immer sichtbar.
+- Echte Hofaufnahme in der Webkarte, Vereinsorganisations-Ansicht im Beispielbereich. Bildherkunft: docs/media/service-offer.md. Vorhandene Fotos in den anderen Bereichen weiterverwendet.
+- Einstieg, Kontakttexte, Metadaten sowie Service-/FAQ-JSON-LD angepasst. 50 €/Stunde bleiben sichtbar; größere Projekte mit vorab abgestimmtem Aufwand und Budget.
+- Geprüft bei 320/390/760/999/1024/1440px in Light/Dark: drei Angebote, kein horizontaler Überlauf, keine defekten geladenen Bilder. Beispiele per Klick und Enter, exklusives Öffnen, Anfrageanker, mobile Navigation und Preis-FAQ geprüft. JavaScript-Syntax, IDs, interne Anker und JSON-LD/FAQ-Übereinstimmung gültig. Kein Produktionsdeployment.
+
 ## 2026-11-09 – Kürzere Seite mit sichtbarem Profil
 
 - Gesamtseite auf vier Bereiche gestrafft: Einstieg, Leistungen, persönliche Vorstellung mit Profilverweisen, Kontakt mit FAQ.
